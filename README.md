@@ -29,6 +29,10 @@ The method of image processing using Face API is very black boxed and does not e
 
 
 
+### Frequently Used Git Commands
+
+1. Remove a File from Staging Area `git reset HEAD -- Code/filename.extension`
+
 
 
 ### FAQ 
