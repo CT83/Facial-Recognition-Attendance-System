@@ -25,7 +25,11 @@ The method of image processing using Face API is very black boxed and does not e
 
 ### How to get up to speed?
 
-1.You can start by reading the Papers in **'Papers/Face Recognition Algorithms'** folder of this repository.
+1. [Read Relevant Papers](https://github.com/college-rohan-sawant/Facial-Recognition-Attendance-System/tree/master/Papers)
+2. [Basic Understanding of Python 3 YouTube Playlist](https://www.youtube.com/watch?v=oVp1vrfL_w4&list=PLQVvvaa0QuDe8XSftW-RAxdo6OmaeL85M)
+3. [Know how Python Virtual Environments Work](https://www.youtube.com/watch?v=N5vscPTWKOk)
+4. [Basic Understanding of Git and GitHub](https://www.youtube.com/watch?v=cEGIFZDyszA&list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx)
+5. [Install PyCharm JetBrains IDE](https://www.jetbrains.com/help/pycharm/install-and-set-up-pycharm.html)
 
 
 
