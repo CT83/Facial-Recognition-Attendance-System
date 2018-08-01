@@ -31,7 +31,9 @@ The method of image processing using Face API is very black boxed and does not e
 4. [Basic Understanding of Git and GitHub](https://www.youtube.com/watch?v=cEGIFZDyszA&list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx)
 5. [Install PyCharm JetBrains IDE](https://www.jetbrains.com/help/pycharm/install-and-set-up-pycharm.html)
 
+### How to Install?
 
+* Install all dependencies `pip install -r requirements.txt`
 
 ### Frequently Used Git Commands
 
