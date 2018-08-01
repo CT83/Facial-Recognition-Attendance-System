@@ -9,7 +9,7 @@ CF.Key.set(KEY)
 BASE_URL = 'https://centralindia.api.cognitive.microsoft.com/face/v1.0'  # Replace with your regional Base URL
 CF.BaseUrl.set(BASE_URL)
 
-img_url = 'images/class5.jpg'
+img_url = 'images/Tanmay_Sawant/test/IMG_20180801_144859.jpg'
 if not os.path.isfile(img_url):
     raise FileNotFoundError
 

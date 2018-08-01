@@ -82,9 +82,6 @@ class FaceAPI_Wrapper:
         return person_id
 
 
-# First create a group >> add persons to that group >> train
-# Detect faces >> Get face ids >> pass them to identify function
-
 def main():
     key = FACE_API_KEY
     base_url = FACE_BASE_URL
