@@ -31,17 +31,21 @@ print(face_api.list_groups())
 # print("Started Training", person_group, "...")
 
 
-def identify_person_in_image(image_path):
-    face_api = FaceAPIWrapper(FACE_API_KEY, FACE_BASE_URL)
+def identify_person_in_image(image_path,
+                             person_id_name=FACE_PERSON_ID_NAME_DICT,
+                             face_api_key=FACE_API_KEY,
+                             face_base_url=FACE_BASE_URL):
+    face_api_wrapper = FaceAPIWrapper(face_api_key, face_base_url)
 
-    face_ids = face_api.detect_faces(image=image_path)
+    face_ids = face_api_wrapper.detect_faces(image=image_path)
     if not face_ids:
         return None
-    identified_person_id = face_api.identify_face(face_ids=face_ids,
-                                                  large_person_group=FACE_GROUP_ID)
+    identified_person_id = face_api_wrapper \
+        .identify_face(face_ids=face_ids,
+                       large_person_group=FACE_GROUP_ID)
     if identified_person_id:
         try:
-            person_name = FACE_PERSON_ID_NAME_DICT[identified_person_id]
+            person_name = person_id_name[identified_person_id]
         except IndexError as ie:
             person_name = None
         return person_name

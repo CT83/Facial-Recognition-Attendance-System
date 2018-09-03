@@ -35,15 +35,14 @@ class Camera:
         self.current_frame.stop()
 
     def capture_image(self):
-        import cv2
 
         # Number of frames to throw away while the camera adjusts to light levels
-        ramp_frames = 30
+        ramp_frames = 1
 
         self.camera = cv2.VideoCapture(CAMERA_PORT)
         _, im = self.camera.read()
         [self.camera.read() for _ in range(ramp_frames)]
-        print("Taking image...")
+        # print("Taking image...")
         _, camera_capture = self.camera.read()
         del self.camera
         return camera_capture

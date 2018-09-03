@@ -72,9 +72,15 @@ class FaceAPIWrapper:
         return res
 
     @staticmethod
-    def identify_face(face_ids, large_person_group):
+    def identify_face(face_ids, large_person_group,
+                      person_group_id=None, max_candidates_return=1,
+                      threshold=None):
         identify_results = CF.face.identify(face_ids,
-                                            large_person_group_id=large_person_group)
+                                            large_person_group_id=large_person_group,
+                                            person_group_id=person_group_id,
+                                            max_candidates_return=max_candidates_return,
+                                            threshold=threshold
+                                            )
         try:
             person_id = identify_results[0]['candidates'][0]['personId']
         except IndexError as ie:
