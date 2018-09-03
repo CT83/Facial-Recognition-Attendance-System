@@ -2,7 +2,7 @@ import os
 import time
 
 from CONSTANTS import FACE_API_KEY, FACE_BASE_URL, FACE_GROUP_ID, FACE_PERSON_ID_NAME_DICT
-from face.FaceAPI_Wrapper import FaceAPI_Wrapper
+from face.FaceAPIWrapper import FaceAPIWrapper
 
 key = FACE_API_KEY
 base_url = FACE_BASE_URL
@@ -14,7 +14,7 @@ print("Images:", image_urls)
 person_group = 'allowed_persons'
 person_name = 'Tanmay Sawant'
 
-face_api = FaceAPI_Wrapper(key, base_url)
+face_api = FaceAPIWrapper(key, base_url)
 print(face_api.list_groups())
 
 
@@ -32,7 +32,7 @@ print(face_api.list_groups())
 
 
 def identify_person_in_image(image_path):
-    face_api = FaceAPI_Wrapper(FACE_API_KEY, FACE_BASE_URL)
+    face_api = FaceAPIWrapper(FACE_API_KEY, FACE_BASE_URL)
 
     face_ids = face_api.detect_faces(image=image_path)
     if not face_ids:

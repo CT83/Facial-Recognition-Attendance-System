@@ -6,7 +6,7 @@ from cognitive_face import CognitiveFaceException
 from CONSTANTS import FACE_API_KEY, FACE_BASE_URL
 
 
-class FaceAPI_Wrapper:
+class FaceAPIWrapper:
 
     def __init__(self, key, base_url):
         self.key = key
@@ -102,7 +102,7 @@ def main():
     person_group = 'bassist'
     person_name = 'Peter Hook'
 
-    face_api = FaceAPI_Wrapper(key, base_url)
+    face_api = FaceAPIWrapper(key, base_url)
     print(face_api.list_groups())
     face_api.delete_group(person_group)
     face_api.create_group(person_group)

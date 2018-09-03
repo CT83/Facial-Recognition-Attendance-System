@@ -1,14 +1,14 @@
 import unittest
 
 from CONSTANTS import FACE_API_KEY, FACE_BASE_URL
-from face.FaceAPI_Wrapper import FaceAPI_Wrapper
+from face.FaceAPIWrapper import FaceAPIWrapper
 
 
-class TestFaceAPI_Wrapper(unittest.TestCase):
+class TestFaceAPIWrapper(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        super(TestFaceAPI_Wrapper, cls).setUpClass()
+        super(TestFaceAPIWrapper, cls).setUpClass()
         key = FACE_API_KEY
         base_url = FACE_BASE_URL
 
@@ -27,7 +27,7 @@ class TestFaceAPI_Wrapper(unittest.TestCase):
         cls.person_group = 'bassist'
         cls.person_name = 'Peter Hook'
 
-        cls.face_api = FaceAPI_Wrapper(key, base_url)
+        cls.face_api = FaceAPIWrapper(key, base_url)
         cls.face_api.delete_group(cls.person_group)
         cls.face_api.create_group(cls.person_group)
         cls.person_id = cls.face_api.create_person(person_group=cls.person_group, person_name=cls.person_name)
@@ -84,7 +84,7 @@ class TestFaceAPI_Wrapper(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        super(TestFaceAPI_Wrapper, cls).tearDownClass()
+        super(TestFaceAPIWrapper, cls).tearDownClass()
         cls.face_api.delete_group(cls.person_group)
 
 

@@ -9,7 +9,8 @@ CF.Key.set(KEY)
 BASE_URL = 'https://centralindia.api.cognitive.microsoft.com/face/v1.0'  # Replace with your regional Base URL
 CF.BaseUrl.set(BASE_URL)
 
-img_url = 'images/Tanmay_Sawant/test/IMG_20180801_144859.jpg'
+img_url = 'images/class4.jpg'
+img_url = "images/Tanmay_Sawant/test/IMG_20180801_141310.jpg"
 if not os.path.isfile(img_url):
     raise FileNotFoundError
 
@@ -40,5 +41,5 @@ for face in detected_faces:
                   (face_rectange['left'], face_rectange['top']),
                   (face_rectange['left'] + face_rectange['width'], face_rectange['top'] + face_rectange['height']),
                   color=(215, 245, 225), thickness=3)
-cv2.imshow("Detected Faces", cv2.resize(image_result, (1200, 800)))
+cv2.imshow("Detected Faces", cv2.resize(image_result, (1200, 900)))
 cv2.waitKey()
