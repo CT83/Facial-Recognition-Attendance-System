@@ -4,7 +4,7 @@ from pprint import pprint
 
 import cv2
 
-from CONSTANTS import CURRENT_IMAGE_FILE, FACE_API_KEY, FACE_BASE_URL, DEFAULT_PERSON_GROUP
+from CONSTANTS import CURRENT_IMAGE_FILE, FACE_API_KEY, FACE_BASE_URL, DEFAULT_PERSON_GROUP, CAPTURE_INTERVAL
 from camera.Camera import Camera
 from face.FaceAPIWrapper import FaceAPIWrapper
 
@@ -64,11 +64,11 @@ def main():
     face_api_wrapper = FaceAPIWrapper(FACE_API_KEY, FACE_BASE_URL)
 
     while True:
-        print("Capturing Image")
+        print("Capturing Image every ", CAPTURE_INTERVAL)
         image = camera.capture_image()
         cv2.imwrite(image_file, image)
         cv2.imshow("Camera Image", image)
-        cv2.waitKey(10)
+        cv2.waitKey(1)
         face_ids = face_api_wrapper.detect_faces(image=image_file)
         if face_ids:
             identified_person_id = face_api_wrapper \
@@ -80,6 +80,7 @@ def main():
                 except IndexError as ie:
                     person_name = None
                 print("Person in camera is", person_name)
+        time.sleep(CAPTURE_INTERVAL)
 
 
 if __name__ == '__main__':
