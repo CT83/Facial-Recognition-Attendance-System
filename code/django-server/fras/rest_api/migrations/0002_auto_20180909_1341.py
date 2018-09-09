@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
-            name='Date',
+            name='WorkingDay',
             fields=[
                 ('date', models.DateField(primary_key=True, serialize=False)),
             ],
