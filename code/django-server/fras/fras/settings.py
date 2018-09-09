@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'rest_framework',  # REST framework
 
     'home',
-    'rest_api',
+    'attendance',
 ]
 
 MIDDLEWARE = [

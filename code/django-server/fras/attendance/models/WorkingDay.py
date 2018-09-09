@@ -1,6 +1,6 @@
 from django.db import models
 
-from rest_api.models.LectureAttendance import LectureAttendance
+from attendance.models.LectureAttendance import LectureAttendance
 
 
 class WorkingDay(models.Model):

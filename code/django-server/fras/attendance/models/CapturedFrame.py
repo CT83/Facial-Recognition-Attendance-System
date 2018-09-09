@@ -1,6 +1,6 @@
 from django.db import models
 
-from rest_api.models.Student import Student
+from attendance.models.Student import Student
 
 
 class CapturedFrame(models.Model):
