@@ -4,7 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/code/raspberry-pi-client" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/code/django-server" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/code/django-server/fras" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.6 (Facial-Recognition-Attendance-System)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
