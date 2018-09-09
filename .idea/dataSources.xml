@@ -1,32 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="sqlalchemy_example" uuid="7a846029-cd00-4457-810f-8bb96d26b8c3">
+    <data-source source="LOCAL" name="db" uuid="6bfc474a-553a-4b06-9786-02580e7693e7">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>SQLite</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\raspberry-pi-client\database\sqlalchemy_example.db</jdbc-url>
-      <driver-properties>
-        <property name="enable_load_extension" value="true" />
-      </driver-properties>
-      <libraries>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.20.1.1/sqlite-jdbc-3.20.1.1.jar</url>
-        </library>
-        <library>
-          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.20.1.1/xerial-sqlite-license.txt</url>
-        </library>
-      </libraries>
-    </data-source>
-    <data-source source="LOCAL" name="sqlalchemy_example [2]" uuid="96c7e784-00bb-4e2e-9362-7ebb29111ab2">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>SQLite</remarks>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\raspberry-pi-client\database\sqlalchemy_example.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\django-server\fras\db.sqlite3</jdbc-url>
       <driver-properties>
         <property name="enable_load_extension" value="true" />
       </driver-properties>
