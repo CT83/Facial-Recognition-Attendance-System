@@ -5,5 +5,5 @@ from attendance.models.LectureAttendance import LectureAttendance
 
 
 class WorkingDay(models.Model):
-    date = models.DateField(_("Date"), auto_now_add=True)
-    lectures_attendances = models.ManyToManyField(LectureAttendance, blank=True)
+    date = models.DateField(_("Date"))
+    lecture_attendances = models.ManyToManyField(LectureAttendance, blank=True)

@@ -11,7 +11,7 @@ router = DefaultRouter()
 router.register(r'students', StudentList, base_name="student")
 router.register(r'working-days', WorkingDayAPI, base_name="working-day")
 router.register(r'lecture-attendances', LectureAttendanceAPI,
-                base_name="lecture-attendance")
+                base_name="lecture-attendances")
 router.register(r'captured-frame', CapturedFrameAPI, base_name="captured-frame")
 
 urlpatterns = [
