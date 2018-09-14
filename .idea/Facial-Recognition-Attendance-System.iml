@@ -18,7 +18,7 @@
       <sourceFolder url="file://$MODULE_DIR$/code/raspberry-pi-client" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/code/django-server/fras" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.6 (Facial-Recognition-Attendance-System)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (Facial-Recognition-Attendance-System-Server)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">

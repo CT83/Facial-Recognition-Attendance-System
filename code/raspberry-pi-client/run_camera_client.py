@@ -3,8 +3,10 @@ import time
 from pprint import pprint
 
 import cv2
+import drest
 
-from CONSTANTS import CURRENT_IMAGE_FILE, FACE_API_KEY, FACE_BASE_URL, DEFAULT_PERSON_GROUP, CAPTURE_INTERVAL
+from CONSTANTS import CURRENT_IMAGE_FILE, FACE_API_KEY, FACE_BASE_URL, DEFAULT_PERSON_GROUP, CAPTURE_INTERVAL, \
+    REST_SERVER_URL
 from camera.Camera import Camera
 from face.FaceAPIWrapper import FaceAPIWrapper
 
@@ -63,7 +65,24 @@ def main():
     camera = Camera()
     face_api_wrapper = FaceAPIWrapper(FACE_API_KEY, FACE_BASE_URL)
 
-    while True:
+    # Create a generic client api object
+    api = drest.API(REST_SERVER_URL)
+
+    response = api.make_request('GET', '/students')
+    pprint(response.data)
+
+    # Or attach a resource
+    api.add_resource('students')
+
+    # Get available resources
+    print("API Resources:")
+    pprint(api.students.get().data)
+
+    # Get all objects of a resource
+    # GET http://localhost:8000/api/v1/users/
+    response = api.students.get()
+
+    while False:
         print("Capturing Image every ", CAPTURE_INTERVAL)
         image = camera.capture_image()
         cv2.imwrite(image_file, image)
@@ -71,9 +90,9 @@ def main():
         cv2.waitKey(1)
         face_ids = face_api_wrapper.detect_faces(image=image_file)
         if face_ids:
-            identified_person_id = face_api_wrapper \
-                .identify_face(face_ids=face_ids,
-                               large_person_group=person_group_id)
+            identified_person_id = \
+                face_api_wrapper.identify_face(face_ids=face_ids,
+                                               large_person_group=person_group_id)
             if identified_person_id:
                 try:
                     person_name = person_lookup_dict[identified_person_id]

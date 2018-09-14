@@ -12,4 +12,4 @@ class StudentList(APIView):
         return Response(serializer.data)
 
     def put(self, request):
-        pass
+        raise NotImplemented

@@ -20,3 +20,5 @@ FACE_GROUP_ID = 'allowed_persons'
 
 CURRENT_IMAGE_FILE = "temp.png"
 DEFAULT_PERSON_GROUP = 'co5g_students'  # DON'T USE CAPITAL LETTERS
+
+REST_SERVER_URL = 'http://localhost:8000/'
