@@ -4,9 +4,8 @@ from attendance.models.CapturedFrame import CapturedFrame
 
 
 class LectureAttendance(models.Model):
-    full_name = models.CharField(max_length=100)
-    face_id = models.CharField(max_length=250, blank=True)
-    captured_frames = models.ManyToManyField(CapturedFrame)
+    lecture_name = models.CharField(max_length=100)
+    captured_frames = models.ManyToManyField(CapturedFrame, null=True)
 
     def get_present_students(self):
         present_students = set()
