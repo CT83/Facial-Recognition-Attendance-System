@@ -15,7 +15,6 @@ class LectureAttendanceAPI(viewsets.ModelViewSet):
         """
         queryset = LectureAttendance.objects.all()
         id = self.request.query_params.get('id', None)
-        print("Query Params", self.request.query_params)
         if id is not None:
             queryset = queryset.filter(id=id)
         return queryset
