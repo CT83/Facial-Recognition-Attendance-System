@@ -1,15 +1,9 @@
-from rest_framework.response import Response
-from rest_framework.views import APIView
+from rest_framework import viewsets
 
 from attendance.models.Student import Student
 from attendance.serializers.StudentSerializer import StudentSerializer
 
 
-class StudentList(APIView):
-    def get(self, request):
-        students = Student.objects.all()
-        serializer = StudentSerializer(students, many=True)
-        return Response(serializer.data)
-
-    def put(self, request):
-        raise NotImplemented
+class StudentList(viewsets.ModelViewSet):
+    queryset = Student.objects.all()
+    serializer_class = StudentSerializer
