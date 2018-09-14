@@ -1,9 +1,9 @@
 from django.db import models
+from django.utils.translation import gettext as _
 
 from attendance.models.LectureAttendance import LectureAttendance
 
 
 class WorkingDay(models.Model):
-    id = models.AutoField(primary_key=True)
-    date = models.DateField(null=True, blank=False)
+    date = models.DateField(_("Date"), auto_now_add=True)
     lectures_attendances = models.ManyToManyField(LectureAttendance, blank=True)
