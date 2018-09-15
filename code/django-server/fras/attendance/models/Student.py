@@ -9,3 +9,6 @@ class Student(models.Model):
 
     def __str__(self):
         return self.full_name
+
+    def get_details(self):
+        return self.full_name + " " + self.face_id
