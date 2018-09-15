@@ -2,10 +2,11 @@ from rest_framework import serializers
 
 from attendance.models.LectureAttendance import LectureAttendance
 from attendance.models.WorkingDay import WorkingDay
+from attendance.serializers.LectureAttendanceSerializer import LectureAttendanceSerializer
 
 
 class WorkingDaySerializer(serializers.ModelSerializer):
-    lecture_attendances = serializers.PrimaryKeyRelatedField(queryset=LectureAttendance.objects.all(), many=True)
+    lecture_attendances = LectureAttendanceSerializer(many=True)
 
     class Meta:
         model = WorkingDay
