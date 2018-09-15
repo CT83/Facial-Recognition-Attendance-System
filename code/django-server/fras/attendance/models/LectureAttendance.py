@@ -1,10 +1,8 @@
 from django.db import models
 
-from attendance.models.WorkingDay import WorkingDay
-
 
 class LectureAttendance(models.Model):
-    working_day = models.ForeignKey(WorkingDay,
+    working_day = models.ForeignKey('attendance.WorkingDay',
                                     related_name="lecture_attendances",
                                     on_delete=models.CASCADE)
     lecture_name = models.CharField(max_length=100)

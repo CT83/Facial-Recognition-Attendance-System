@@ -4,7 +4,7 @@ from attendance.models.CapturedFrame import CapturedFrame
 
 
 class FaceId(models.Model):
-    captured_frame = models.ForeignKey(CapturedFrame,
+    captured_frame = models.ForeignKey('attendance.CapturedFrame',
                                        related_name="face_ids",
                                        on_delete=models.CASCADE)
     face_id = models.TextField()
