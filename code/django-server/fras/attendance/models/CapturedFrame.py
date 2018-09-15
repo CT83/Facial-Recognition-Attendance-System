@@ -8,3 +8,6 @@ class CapturedFrame(models.Model):
     students = models.ManyToManyField(Student,
                                       verbose_name="Students in Image",
                                       blank=True)
+
+    def __str__(self):
+        return str(self.captured_at)

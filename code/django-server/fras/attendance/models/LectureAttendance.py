@@ -23,3 +23,6 @@ class LectureAttendance(models.Model):
                 present_students.add(student)
         print(present_students)
         return present_students
+
+    def __str__(self):
+        return self.lecture_name + " - " + str(self.working_day)
