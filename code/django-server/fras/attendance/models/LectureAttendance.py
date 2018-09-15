@@ -1,10 +1,16 @@
 from django.db import models
 
 from attendance.models.CapturedFrame import CapturedFrame
+from attendance.models.WorkingDay import WorkingDay
 
 
 class LectureAttendance(models.Model):
+    working_day = models.ForeignKey(WorkingDay,
+                                    related_name="lecture_attendances",
+                                    on_delete=models.CASCADE)
     lecture_name = models.CharField(max_length=100)
+
+    # TODO Update this to one to many relation
     captured_frames = models.ManyToManyField(CapturedFrame, blank=True)
 
     def get_present_students(self):

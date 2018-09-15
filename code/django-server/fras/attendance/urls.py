@@ -8,12 +8,11 @@ from attendance.views.StudentList import StudentList
 from attendance.views.WorkingDayAPI import WorkingDayAPI
 
 router = DefaultRouter()
-router.register(r'students', StudentList, base_name="student")
-router.register(r'working-days', WorkingDayAPI, base_name="working-day")
-router.register(r'lecture-attendances', LectureAttendanceAPI,
-                base_name="lecture-attendances")
-router.register(r'captured-frame', CapturedFrameAPI, base_name="captured-frame")
+router.register('students', StudentList)
+router.register('working-days', WorkingDayAPI)
+router.register('lecture-attendances', LectureAttendanceAPI)
+router.register(r'captured-frame', CapturedFrameAPI)
 
 urlpatterns = [
-    url(r'^', include(router.urls)),
+    url('', include(router.urls)),
 ]
