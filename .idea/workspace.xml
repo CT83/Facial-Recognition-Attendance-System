@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoTestManager">
+    <enabled-run-configurations>
+      <run-configuration type="DjangoTestsConfigurationType" name="All" />
+    </enabled-run-configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="817089f8-8e5e-492f-9a00-c3c6199cd3b4" name="Default" comment="Updated foreign key">
+      <change afterPath="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/FaceIdSerializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/django-server/fras/attendance/models/FaceId.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/django-server/fras/attendance/models/FaceId.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/CapturedFrameSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/CapturedFrameSerializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/StudentSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/StudentSerializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/WorkingDaySerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/WorkingDaySerializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/django-server/fras/attendance/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/django-server/fras/attendance/urls.py" afterDir="false" />
+    </list>
+    <ignored path="raspberry-pi-client/FACE_API_KEY.json" />
+    <ignored path="code/raspberry-pi-client/FACE_API_KEY.json" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Facial_Recognition_Attendance_System$Camera.coverage" NAME="Camera Coverage Results" MODIFIED="1535973196547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/raspberry-pi-client/camera" />
+    <SUITE FILE_PATH="coverage/Facial_Recognition_Attendance_System$model_test.coverage" NAME="All Coverage Results" MODIFIED="1537017235034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Facial_Recognition_Attendance_System$face_detect.coverage" NAME="face_detect Coverage Results" MODIFIED="1535960169050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Code/face" />
+    <SUITE FILE_PATH="coverage/Facial_Recognition_Attendance_System$run_camera_client.coverage" NAME="run_camera_client Coverage Results" MODIFIED="1536506462270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/raspberry-pi-client" />
+    <SUITE FILE_PATH="coverage/Facial_Recognition_Attendance_System$train_setup_face_identify.coverage" NAME="train_setup_face_identify Coverage Results" MODIFIED="1533141722286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Code/face" />
+    <SUITE FILE_PATH="coverage/Facial_Recognition_Attendance_System$database_utils.coverage" NAME="database_utils Coverage Results" MODIFIED="1535970230932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/raspberry-pi-client/database" />
+    <SUITE FILE_PATH="coverage/Facial_Recognition_Attendance_System$tests.coverage" NAME="tests Coverage Results" MODIFIED="1537013153362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/django-server/fras/attendance" />
+    <SUITE FILE_PATH="coverage/Facial_Recognition_Attendance_System$py_test_in_test_camera_py.coverage" NAME="py.test in test_camera.py Coverage Results" MODIFIED="1535970429282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/raspberry-pi-client/camera" />
+    <SUITE FILE_PATH="coverage/Facial_Recognition_Attendance_System$py_test_for_test_face_api_TestFaceAPIWrapper.coverage" NAME="py.test for test_face_api.TestFaceAPIWrapper Coverage Results" MODIFIED="1535968914490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/raspberry-pi-client/face" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="WorkingDayAPI.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/WorkingDayAPI.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkingDaySerializer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/WorkingDaySerializer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="18" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LectureAttendanceSerializer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/LectureAttendanceSerializer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentSerializer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/StudentSerializer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="16" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/Student.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="11" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LectureAttendance.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/LectureAttendance.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CapturedFrameSerializer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/CapturedFrameSerializer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FaceId.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/FaceId.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FaceIdSerializer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/FaceIdSerializer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>rohan sa</find>
+      <find>installed</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/code/shared/models/attendance/Lecture.py" />
+        <option value="$PROJECT_DIR$/code/shared/models/admin.py" />
+        <option value="$PROJECT_DIR$/code/shared/models/register.py" />
+        <option value="$PROJECT_DIR$/code/shared/models/Lecture.py" />
+        <option value="$PROJECT_DIR$/code/shared/models/Day.py" />
+        <option value="$PROJECT_DIR$/code/shared/models/model_setup.py" />
+        <option value="$PROJECT_DIR$/code/shared/models/Student.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/home/models.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/rest_api/models/Student.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/rest_api/models.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/rest_api/models/Day.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/rest_api/models/Date.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/rest_api/models/Lecture.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/rest_api/utils.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/rest_api/models/CaptureFrame.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/CONSTANTS.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/rest_api/models/LectureAttendance.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/rest_api/models/CapturedFrame.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/rest_api/models/WorkingDay.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/rest_api/admin.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/rest_api/serializers/StudentSerializer.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/fras/urls.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/requirements.txt" />
+        <option value="$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py" />
+        <option value="$PROJECT_DIR$/code/raspberry-pi-client/run_camera_client.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/views/CapturedFrameAPI.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/views/StudentList.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/views/LectureAttendanceAPI.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/WorkingDay.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/FaceIdList.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/admin.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/Student.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings/prod.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/manage.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings/base.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings/dev.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/tests.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/CapturedFrame.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/LectureAttendance.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/tests.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/tests.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/views/WorkingDayAPI.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/WorkingDaySerializer.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/StudentSerializer.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/LectureAttendanceSerializer.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/urls.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/FaceId.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/CapturedFrameSerializer.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/FaceIdSerializer.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="720" />
+    <option name="width" value="720" />
+    <option name="height" value="860" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="django-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="django-server" type="462c0819:PsiDirectoryNode" />
+              <item name="fras" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="django-server" type="462c0819:PsiDirectoryNode" />
+              <item name="fras" type="462c0819:PsiDirectoryNode" />
+              <item name="attendance" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="django-server" type="462c0819:PsiDirectoryNode" />
+              <item name="fras" type="462c0819:PsiDirectoryNode" />
+              <item name="attendance" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="django-server" type="462c0819:PsiDirectoryNode" />
+              <item name="fras" type="462c0819:PsiDirectoryNode" />
+              <item name="attendance" type="462c0819:PsiDirectoryNode" />
+              <item name="serializers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="django-server" type="462c0819:PsiDirectoryNode" />
+              <item name="fras" type="462c0819:PsiDirectoryNode" />
+              <item name="attendance" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="django-server" type="462c0819:PsiDirectoryNode" />
+              <item name="fras" type="462c0819:PsiDirectoryNode" />
+              <item name="fras" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="raspberry-pi-client" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\django-server\fras\attendance\models" />
+      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\django-server\fras\fras" />
+      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\shared\models" />
+      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\raspberry-pi-client\face\images\Peter_Hook" />
+      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\raspberry-pi-client\face\images\Rohan_Sawant\test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\django-server\fras\attendance\serializers" />
+      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\django-server\fras\attendance\views" />
+      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\django-server\fras\rest_api\serializers" />
+      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\raspberry-pi-client\face\images" />
+      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\raspberry-pi-client" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.Django">
+    <configuration name="All" type="DjangoTestsConfigurationType" factoryName="Django tests" singleton="true">
+      <module name="Facial-Recognition-Attendance-System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\MegaSync\Languages\Python\CT83-PC\venv\Facial-Recognition-Attendance-System-Server\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py" />
+      <option name="CUSTOM_SETTINGS" value="true" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+    </configuration>
+    <configuration name="Camera" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Facial-Recognition-Attendance-System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/raspberry-pi-client/camera" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/raspberry-pi-client/camera/Camera.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="database_utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Facial-Recognition-Attendance-System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/raspberry-pi-client/database" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/raspberry-pi-client/database/database_utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="run_camera_client" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Facial-Recognition-Attendance-System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\MegaSync\Languages\Python\CT83-PC\venv\Facial-Recognition-Attendance-System-PiClient\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/raspberry-pi-client" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/raspberry-pi-client/run_camera_client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Django" type="Python.DjangoServer" factoryName="Django server" singleton="true">
+      <module name="Facial-Recognition-Attendance-System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="fras.settings.dev" />
+      </envs>
+      <option name="SDK_HOME" value="D:\MegaSync\Languages\Python\CT83-PC\venv\Facial-Recognition-Attendance-System-Server\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="http://localhost:8000/" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+    <configuration name="py.test in test_camera.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Facial-Recognition-Attendance-System" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/raspberry-pi-client/camera" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/code/raspberry-pi-client/camera/test_camera.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.Django" />
+      <item itemvalue="Django tests.All" />
+      <item itemvalue="Python.database_utils" />
+      <item itemvalue="Python.run_camera_client" />
+      <item itemvalue="Python.Camera" />
+      <item itemvalue="Python tests.py.test in test_camera.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run_camera_client" />
+        <item itemvalue="Python.Camera" />
+        <item itemvalue="Python tests.py.test in test_camera.py" />
+        <item itemvalue="Python.database_utils" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="817089f8-8e5e-492f-9a00-c3c6199cd3b4" name="Default" comment="" />
+      <created>1533139924629</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533139924629</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Added code">
+      <created>1533141033103</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533141033103</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added Face recognition example">
+      <created>1533142246771</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1533142246771</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated doc, requirements.txt">
+      <created>1533143114744</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1533143114744</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated readme">
+      <created>1533143136484</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1533143136484</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactor">
+      <created>1535969062225</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1535969062225</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Refactor">
+      <created>1535970677510</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1535970677510</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Detect person in live stream working">
+      <created>1535980355666</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1535980355666</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Cleanup">
+      <created>1536303840682</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1536303840682</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Cleanup">
+      <created>1536304365035</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1536304365035</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added Django Boilerplate and models">
+      <created>1536368150214</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1536368150214</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added django models, removed shared">
+      <created>1536477821908</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1536477821908</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added migrations">
+      <created>1536477834664</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1536477834664</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fixed admin">
+      <created>1536477868367</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1536477868367</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fixed admin">
+      <created>1536477887427</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1536477887427</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fixed admin">
+      <created>1536477904452</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1536477904452</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added new models, get_present_students()">
+      <created>1536480809845</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1536480809845</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Cleanup">
+      <created>1536480828044</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1536480828044</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Updated table">
+      <created>1536491590339</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1536491590340</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixed migrations, registered models in admin panel">
+      <created>1536492534933</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1536492534933</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Renamed rest_api to attendance and added serializer">
+      <created>1536493262464</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1536493262464</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added serializers">
+      <created>1536493373114</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1536493373114</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Basic rest server working">
+      <created>1536494443708</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1536494443708</updated>
+    </task>
+    <task id="LOCAL-00023" summary="PUT Rest working">
+      <created>1536897711841</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1536897711841</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fixed models">
+      <created>1536905447753</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1536905447753</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Added lecture attendance model to api">
+      <created>1536905741280</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1536905741280</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added captured frame model to api">
+      <created>1536906179430</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1536906179430</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Updated rest to use ModelViewSet">
+      <created>1536914417810</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1536914417810</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Added migrations">
+      <created>1536914427963</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1536914427963</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Many to Many Rest working">
+      <created>1536923704856</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1536923704856</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Added Migrations">
+      <created>1536923722523</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1536923722523</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Get by query set working">
+      <created>1536923878627</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1536923878627</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Cleanup">
+      <created>1536923938278</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1536923938278</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Created exactly reverse relations">
+      <created>1536991468034</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1536991468034</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Get list of children of working day working">
+      <created>1536995590488</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1536995590488</updated>
+    </task>
+    <task id="LOCAL-00035" summary="URLs working">
+      <created>1537000429048</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1537000429048</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Added str to alli">
+      <created>1537004024552</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1537004024552</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Cleanup">
+      <created>1537011524516</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1537011524516</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Added basic unit test, refactored settings, updated models">
+      <created>1537014285965</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1537014285965</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Updated foreign key">
+      <created>1537014703565</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1537014703565</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="All - 2018.09.15 at 18h 40m 35s.xml">
+      <configuration name="All" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="All - 2018.09.15 at 18h 40m 37s.xml">
+      <configuration name="All" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="All - 2018.09.15 at 18h 40m 44s.xml">
+      <configuration name="All" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="All - 2018.09.15 at 18h 40m 46s.xml">
+      <configuration name="All" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="All - 2018.09.15 at 18h 41m 07s.xml">
+      <configuration name="All" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="All - 2018.09.15 at 18h 42m 00s.xml">
+      <configuration name="All" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="All - 2018.09.15 at 18h 42m 11s.xml">
+      <configuration name="All" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="All - 2018.09.15 at 18h 42m 20s.xml">
+      <configuration name="All" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="All - 2018.09.15 at 18h 42m 35s.xml">
+      <configuration name="All" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="All - 2018.09.15 at 18h 43m 57s.xml">
+      <configuration name="All" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3283582" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3727145" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" x="29" y="297" width="1382" height="306" id="Run" order="2" weight="0.24378109" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.329602" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.41666666" />
+      <window_info active="true" content_ui="combo" x="556" y="48" width="328" height="804" id="Project" order="0" visible="true" weight="0.2901592" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3299566" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329602" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994374" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.329602" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.329602" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1903039" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="2" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="bottom" id="Run" order="9" visible="true" weight="0.329602" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.329602" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="right" id="SciView" order="0" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.329602" />
+      <window_info anchor="bottom" id="Python Console" order="6" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Added Django Boilerplate and models" />
+    <MESSAGE value="Added django models, removed shared" />
+    <MESSAGE value="Fixed admin" />
+    <MESSAGE value="Added new models, get_present_students()" />
+    <MESSAGE value="Updated table" />
+    <MESSAGE value="Fixed migrations, registered models in admin panel" />
+    <MESSAGE value="Renamed rest_api to attendance and added serializer" />
+    <MESSAGE value="Added serializers" />
+    <MESSAGE value="Basic rest server working" />
+    <MESSAGE value="PUT Rest working" />
+    <MESSAGE value="Fixed models" />
+    <MESSAGE value="Added lecture attendance model to api" />
+    <MESSAGE value="Added captured frame model to api" />
+    <MESSAGE value="Updated rest to use ModelViewSet" />
+    <MESSAGE value="Added migrations" />
+    <MESSAGE value="Many to Many Rest working" />
+    <MESSAGE value="Added Migrations" />
+    <MESSAGE value="Get by query set working" />
+    <MESSAGE value="Created exactly reverse relations" />
+    <MESSAGE value="Get list of children of working day working" />
+    <MESSAGE value="URLs working" />
+    <MESSAGE value="Added str to alli" />
+    <MESSAGE value="Cleanup" />
+    <MESSAGE value="Added basic unit test, refactored settings, updated models" />
+    <MESSAGE value="Updated foreign key" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated foreign key" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/home/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/CONSTANTS.py" />
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/rest_api/utils.py" />
+    <entry file="file://D:/MegaSync/Languages/Python/CT83-PC/venv/Facial-Recognition-Attendance-System/Lib/site-packages/django/db/models/fields/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="1330" column="6" lean-forward="true" selection-start-line="1330" selection-start-column="6" selection-end-line="1330" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/FACE_API_KEY.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views.py" />
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/run_camera_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/MegaSync/Languages/Python/CT83-PC/venv/Facial-Recognition-Attendance-System-Server/Lib/site-packages/rest_framework/routers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/MegaSync/Languages/Python/CT83-PC/venv/Facial-Recognition-Attendance-System-Server/Lib/site-packages/rest_framework/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="93" column="6" selection-start-line="93" selection-start-column="6" selection-end-line="93" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/face/train_setup_face_identify.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-49">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://45b39219-e7dd-408f-9329-eb6df9b89f71/schema/main/table/attendance_workingday">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/45b39219-e7dd-408f-9329-eb6df9b89f71/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://2d10ba2b-c3a4-439b-aa04-605730e7d327/schema/main/table/attendance_student">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2d10ba2b-c3a4-439b-aa04-605730e7d327/schema/main/table/attendance_workingday">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2d10ba2b-c3a4-439b-aa04-605730e7d327/schema/main/table/attendance_workingday_lecture_attendances">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2d10ba2b-c3a4-439b-aa04-605730e7d327/schema/main/table/attendance_lectureattendance_captured_frames">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2d10ba2b-c3a4-439b-aa04-605730e7d327/schema/main/table/attendance_lectureattendance">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/MegaSync/Languages/Python/CT83-PC/venv/Facial-Recognition-Attendance-System-Server/Lib/site-packages/django/db/models/fields/related.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="781" column="27" selection-start-line="781" selection-start-column="27" selection-end-line="781" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/LectureAttendanceAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/MegaSync/Languages/Python/CT83-PC/venv/Facial-Recognition-Attendance-System-Server/Lib/site-packages/django/db/models/fields/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="2062" column="6" selection-start-line="2062" selection-start-column="6" selection-end-line="2062" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/CapturedFrameAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/StudentList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/prod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/WorkingDay.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="27" selection-start-line="27" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/CapturedFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="e#29#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/WorkingDayAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/Student.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/LectureAttendance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/FaceId.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/WorkingDaySerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/LectureAttendanceSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/CapturedFrameSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/FaceIdSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/StudentSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
