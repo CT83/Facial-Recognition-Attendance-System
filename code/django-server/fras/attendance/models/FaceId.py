@@ -1,7 +1,5 @@
 from django.db import models
 
-from attendance.models.CapturedFrame import CapturedFrame
-
 
 class FaceId(models.Model):
     captured_frame = models.ForeignKey('attendance.CapturedFrame',

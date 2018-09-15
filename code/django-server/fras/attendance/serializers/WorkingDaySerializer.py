@@ -10,3 +10,9 @@ class WorkingDaySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = WorkingDay
         fields = '__all__'
+
+    def create(self, validated_data):
+        date = validated_data.pop('date')
+        working_day = WorkingDay(date=date)
+        working_day.save()
+        return working_day
