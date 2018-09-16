@@ -26,7 +26,8 @@ class StudentSerializerTest(TestCase):
 
     def test_contains_expected_fields(self):
         data = self.serializer.data
-        self.assertCountEqual(set(data.keys()), {'url', 'full_name', 'face_id'})
+        print(data)
+        self.assertCountEqual(set(data.keys()), {'full_name', 'face_id'})
 
     def test_face_id_field_content(self):
         data = self.serializer.data

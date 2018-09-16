@@ -4,12 +4,12 @@ from attendance.models.WorkingDay import WorkingDay
 from attendance.serializers.LectureAttendanceSerializer import LectureAttendanceSerializer
 
 
-class WorkingDaySerializer(serializers.HyperlinkedModelSerializer):
+class WorkingDaySerializer(serializers.ModelSerializer):
     lecture_attendances = LectureAttendanceSerializer(many=True)
 
     class Meta:
         model = WorkingDay
-        fields = '__all__'
+        fields = ('date', 'lecture_attendances')
 
     def create(self, validated_data):
         date = validated_data.pop('date')

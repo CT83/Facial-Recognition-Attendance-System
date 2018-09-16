@@ -3,10 +3,10 @@ from rest_framework import serializers
 from attendance.models.Student import Student
 
 
-class StudentSerializer(serializers.HyperlinkedModelSerializer):
+class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Student
-        fields = '__all__'
+        fields = ('full_name', 'face_id')
 
     def create(self, validated_data):
         full_name = validated_data.pop('full_name')
