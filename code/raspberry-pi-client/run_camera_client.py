@@ -82,7 +82,7 @@ def main():
     # GET http://localhost:8000/api/v1/users/
     response = api.students.get()
 
-    while False:
+    while 1:
         print("Capturing Image every ", CAPTURE_INTERVAL)
         image = camera.capture_image()
         cv2.imwrite(image_file, image)

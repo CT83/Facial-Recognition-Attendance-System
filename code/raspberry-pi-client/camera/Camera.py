@@ -2,7 +2,7 @@ import time
 
 from CONSTANTS import IS_RASPBERRY_PI, CAMERA_PORT, RESOLUTION_H, RESOLUTION_W
 from camera.camera_utils import preview_image
-
+import cv2
 
 class Camera:
 

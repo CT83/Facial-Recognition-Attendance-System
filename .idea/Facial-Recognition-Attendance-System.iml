@@ -18,14 +18,14 @@
       <sourceFolder url="file://$MODULE_DIR$/code/raspberry-pi-client" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/code/django-server/fras" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.7 (Facial-Recognition-Attendance-System-Server)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (Facial-Recognition-Attendance-System-Client)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
   </component>
   <component name="TestRunnerService">
-    <option name="projectConfiguration" value="py.test" />
+    <option name="projectConfiguration" value="pytest" />
     <option name="PROJECT_TEST_RUNNER" value="py.test" />
   </component>
 </module>

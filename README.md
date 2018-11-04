@@ -7,7 +7,6 @@ An attendance system which uses facial recognition to detect which people are pr
 ### What are we using? 
 
 1. [Microsoft Face API ](https://azure.microsoft.com/en-in/services/cognitive-services/face/)
-
    
 
 ### What do we plan on implementing?
@@ -21,19 +20,19 @@ The method of image processing using Face API is very black boxed and does not e
 2.https://github.com/ageitgey/face_recognition
 3.https://github.com/Mjrovai/OpenCV-Face-Recognition
 
-
-
 ### How to get up to speed?
 
-1. [Read Relevant Papers](https://github.com/college-rohan-sawant/Facial-Recognition-Attendance-System/tree/master/Papers)
+1. [Read Relevant Papers](https://github.com/CT83/Facial-Recognition-Attendance-System/tree/master/Papers)
 2. [Basic Understanding of Python 3 YouTube Playlist](https://www.youtube.com/watch?v=oVp1vrfL_w4&list=PLQVvvaa0QuDe8XSftW-RAxdo6OmaeL85M)
 3. [Know how Python Virtual Environments Work](https://www.youtube.com/watch?v=N5vscPTWKOk)
 4. [Basic Understanding of Git and GitHub](https://www.youtube.com/watch?v=cEGIFZDyszA&list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx)
 5. [Install PyCharm JetBrains IDE](https://www.jetbrains.com/help/pycharm/install-and-set-up-pycharm.html)
 
-### How to Install?
+### How to Install - Server?
 
 * Install all dependencies `pip install -r requirements.txt`
+* Create Database migrations `python manage.py makemigrations`
+* Migrate Database `python manage.py migrate`
 
 ### Frequently Used Git Commands
 
