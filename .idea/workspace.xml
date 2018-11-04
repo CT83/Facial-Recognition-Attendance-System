@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="817089f8-8e5e-492f-9a00-c3c6199cd3b4" name="Default" comment="Added cros headers django and angular list students working">
-      <change beforePath="$PROJECT_DIR$/.idea/Facial-Recognition-Attendance-System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Facial-Recognition-Attendance-System.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/students/students.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/students/students.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/students/students.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/students/students.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py" afterDir="false" />
     </list>
     <ignored path="raspberry-pi-client/FACE_API_KEY.json" />
     <ignored path="code/raspberry-pi-client/FACE_API_KEY.json" />
@@ -103,13 +101,13 @@
           <entry key="gitignore" value="2" />
           <entry key="md" value="142" />
           <entry key="py" value="33" />
-          <entry key="txt" value="202" />
+          <entry key="txt" value="230" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="142" />
-          <entry key="PLAIN_TEXT" value="204" />
+          <entry key="PLAIN_TEXT" value="232" />
           <entry key="Python" value="33" />
         </counts>
       </usages-collector>
@@ -161,8 +159,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="350">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -341,21 +339,13 @@
               <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="raspberry-pi-client" type="462c0819:PsiDirectoryNode" />
+              <item name="django-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
               <item name="raspberry-pi-client" type="462c0819:PsiDirectoryNode" />
-              <item name="camera" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="raspberry-pi-client" type="462c0819:PsiDirectoryNode" />
-              <item name="face" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -876,7 +866,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541334180617</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Updated django test.py">
+      <created>1541334417960</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1541334417960</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -921,7 +918,7 @@
       <window_info anchor="bottom" id="TypeScript" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" x="29" y="297" width="1382" height="306" id="Run" order="2" weight="0.24295011" />
+      <window_info anchor="bottom" x="29" y="297" width="1382" height="306" id="Run" order="2" visible="true" weight="0.24295011" />
       <window_info anchor="bottom" id="Database Changes" order="3" weight="0.32936507" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.4164859" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.329602" />
@@ -951,7 +948,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Fixed migrations, registered models in admin panel" />
     <MESSAGE value="Renamed rest_api to attendance and added serializer" />
     <MESSAGE value="Added serializers" />
     <MESSAGE value="Basic rest server working" />
@@ -976,7 +972,8 @@
     <MESSAGE value="Camera Client working..." />
     <MESSAGE value="Angular Sidebar working, updated FACE_API_KEY.json" />
     <MESSAGE value="Added cros headers django and angular list students working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added cros headers django and angular list students working" />
+    <MESSAGE value="Updated django test.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated django test.py" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1280,8 +1277,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="350">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
