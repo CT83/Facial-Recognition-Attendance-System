@@ -17,6 +17,7 @@
       <sourceFolder url="file://$MODULE_DIR$/code" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/code/raspberry-pi-client" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/code/django-server/fras" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/code/angular_ui" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (Facial-Recognition-Attendance-System-Server)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

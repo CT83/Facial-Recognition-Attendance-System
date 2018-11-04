@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="817089f8-8e5e-492f-9a00-c3c6199cd3b4" name="Default" comment="Angular Sidebar working, updated FACE_API_KEY.json">
-      <change beforePath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/django-server/fras/fras/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/django-server/fras/fras/settings/base.py" afterDir="false" />
+    <list default="true" id="817089f8-8e5e-492f-9a00-c3c6199cd3b4" name="Default" comment="Added cros headers django and angular list students working">
+      <change beforePath="$PROJECT_DIR$/.idea/Facial-Recognition-Attendance-System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Facial-Recognition-Attendance-System.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/students/students.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/students/students.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/students/students.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/students/students.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py" afterDir="false" />
     </list>
     <ignored path="raspberry-pi-client/FACE_API_KEY.json" />
     <ignored path="code/raspberry-pi-client/FACE_API_KEY.json" />
@@ -100,15 +102,15 @@
         <counts>
           <entry key="gitignore" value="2" />
           <entry key="md" value="142" />
-          <entry key="py" value="31" />
-          <entry key="txt" value="122" />
+          <entry key="py" value="33" />
+          <entry key="txt" value="202" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="142" />
-          <entry key="PLAIN_TEXT" value="124" />
-          <entry key="Python" value="31" />
+          <entry key="PLAIN_TEXT" value="204" />
+          <entry key="Python" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -124,16 +126,16 @@
         <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="2950">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
             </state>
           </provider>
         </entry>
@@ -156,11 +158,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="175">
+              <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -270,7 +275,6 @@
         <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/FaceIdList.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/attendance/admin.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings.py" />
-        <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings/prod.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings/dev.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/CapturedFrame.py" />
@@ -294,6 +298,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings/base.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py" />
       </list>
     </option>
   </component>
@@ -302,9 +307,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/code/angular_ui/fras-ui/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -334,36 +336,6 @@
               <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="django-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="django-server" type="462c0819:PsiDirectoryNode" />
-              <item name="fras" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="django-server" type="462c0819:PsiDirectoryNode" />
-              <item name="fras" type="462c0819:PsiDirectoryNode" />
-              <item name="fras" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="django-server" type="462c0819:PsiDirectoryNode" />
-              <item name="fras" type="462c0819:PsiDirectoryNode" />
-              <item name="fras" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
@@ -400,6 +372,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="ts.external.directory.path" value="D:\Code\Python\CT83-PC\Facial-Recognition-Attendance-System\code\angular_ui\fras-ui\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -896,7 +869,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541330922602</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Added cros headers django and angular list students working">
+      <created>1541334180615</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1541334180617</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -933,16 +913,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" x="556" y="48" width="328" height="804" id="Project" order="1" visible="true" weight="0.1401919" />
+      <window_info active="true" content_ui="combo" x="556" y="48" width="328" height="804" id="Project" order="1" visible="true" weight="0.1401919" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="TypeScript" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" x="29" y="297" width="1382" height="306" id="Run" order="2" weight="0.24295011" />
       <window_info anchor="bottom" id="Database Changes" order="3" weight="0.32936507" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.4164859" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.4164859" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.329602" />
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3727145" />
@@ -970,7 +951,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Updated table" />
     <MESSAGE value="Fixed migrations, registered models in admin panel" />
     <MESSAGE value="Renamed rest_api to attendance and added serializer" />
     <MESSAGE value="Added serializers" />
@@ -995,7 +975,8 @@
     <MESSAGE value="Updated gitignore" />
     <MESSAGE value="Camera Client working..." />
     <MESSAGE value="Angular Sidebar working, updated FACE_API_KEY.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="Angular Sidebar working, updated FACE_API_KEY.json" />
+    <MESSAGE value="Added cros headers django and angular list students working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added cros headers django and angular list students working" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1269,10 +1250,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2950">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1292,15 +1280,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        <state relative-caret-position="175">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
