@@ -1,0 +1,12 @@
+<h1>Students</h1>
+
+<ul>
+  <li *ngFor="let student of students$">
+    <a routerLink="/details/">{{ student.full_name }}</a>
+
+    <ul>
+      <li>{{ user.email }}</li>
+      <li><a href="">{{ student.face_id }}</a></li>
+    </ul>
+  </li>
+</ul>
