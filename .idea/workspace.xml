@@ -2,11 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="817089f8-8e5e-492f-9a00-c3c6199cd3b4" name="Default" comment="Camera Client working...">
-      <change beforePath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/e2e/tsconfig.e2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/tslint.json" afterDir="false" />
     </list>
     <ignored path="raspberry-pi-client/FACE_API_KEY.json" />
     <ignored path="code/raspberry-pi-client/FACE_API_KEY.json" />
@@ -129,11 +155,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            <state relative-caret-position="600">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -141,8 +167,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/run_camera_client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="400">
+              <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,11 +188,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="184" column="3" selection-start-line="184" selection-start-column="3" selection-end-line="184" selection-end-column="3" />
+            <state relative-caret-position="572">
+              <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
             </state>
           </provider>
         </entry>
@@ -226,13 +255,9 @@
     <findStrings>
       <find />
       <find>installed</find>
-      <find>face</find>
-      <find>FACE</find>
-      <find>.json</find>
     </findStrings>
     <dirStrings>
       <dir />
-      <dir>D:\Code\Python\CT83-PC\Facial-Recognition-Attendance-System\code\raspberry-pi-client</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -261,6 +286,7 @@
         <option value="$PROJECT_DIR$/code/django-server/fras/rest_api/serializers/StudentSerializer.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/fras/urls.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/requirements.txt" />
+        <option value="$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/attendance/views/CapturedFrameAPI.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/attendance/views/StudentList.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/attendance/views/LectureAttendanceAPI.py" />
@@ -291,7 +317,6 @@
         <option value="$PROJECT_DIR$/code/raspberry-pi-client/run_camera_client.py" />
         <option value="$PROJECT_DIR$/code/raspberry-pi-client/camera/Camera.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py" />
       </list>
     </option>
   </component>
@@ -309,7 +334,7 @@
       <path value="$PROJECT_DIR$/code/angular_ui/fras-ui/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -521,7 +546,7 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for tests.StudentSerializerTest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for tests.StudentSerializerTest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Facial-Recognition-Attendance-System" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -537,7 +562,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_camera.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test in test_camera.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Facial-Recognition-Attendance-System" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -559,15 +584,15 @@
       <item itemvalue="Python.database_utils" />
       <item itemvalue="Python.run_camera_client" />
       <item itemvalue="Python.Camera" />
-      <item itemvalue="Python tests.pytest in test_camera.py" />
-      <item itemvalue="Python tests.pytest for tests.StudentSerializerTest" />
+      <item itemvalue="Python tests.py.test in test_camera.py" />
+      <item itemvalue="Python tests.py.test for tests.StudentSerializerTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run_camera_client" />
-        <item itemvalue="Python tests.pytest for tests.StudentSerializerTest" />
+        <item itemvalue="Python tests.py.test for tests.StudentSerializerTest" />
         <item itemvalue="Python.Camera" />
-        <item itemvalue="Python tests.pytest in test_camera.py" />
+        <item itemvalue="Python tests.py.test in test_camera.py" />
         <item itemvalue="Python.database_utils" />
       </list>
     </recent_temporary>
@@ -1209,6 +1234,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/database/database_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -1254,6 +1286,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/run_camera_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/camera/Camera.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1266,22 +1308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="184" column="3" selection-start-line="184" selection-start-column="3" selection-end-line="184" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/run_camera_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="572">
+          <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
         </state>
       </provider>
     </entry>
