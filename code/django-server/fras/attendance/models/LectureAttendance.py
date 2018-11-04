@@ -14,7 +14,7 @@ class LectureAttendance(models.Model):
 def get_present_students(lecture_attendance):
     present_students = set()
     from attendance.models.CapturedFrame import CapturedFrame
-    captured_frames = CapturedFrame.objects.filter(lecture_attendacne=lecture_attendance)
+    captured_frames = CapturedFrame.objects.filter(lecture_attendance=lecture_attendance)
     students_in_frames = [student for captured_frame in captured_frames for student in
                           captured_frame.students.all()]
 

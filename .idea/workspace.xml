@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="817089f8-8e5e-492f-9a00-c3c6199cd3b4" name="Default" comment="Added cros headers django and angular list students working">
+      <change afterPath="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/student_details_serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/django-server/fras/attendance/views/StudentDetails.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/students/students.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/students/students.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/students/students.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/students/students.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/django-server/fras/attendance/models/CapturedFrame.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/django-server/fras/attendance/models/CapturedFrame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/django-server/fras/attendance/models/LectureAttendance.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/django-server/fras/attendance/models/LectureAttendance.py" afterDir="false" />
     </list>
     <ignored path="raspberry-pi-client/FACE_API_KEY.json" />
     <ignored path="code/raspberry-pi-client/FACE_API_KEY.json" />
@@ -75,15 +77,16 @@
           <entry key="project.closed" value="3" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="md" value="3" />
-          <entry key="py" value="31" />
+          <entry key="py" value="52" />
           <entry key="sql" value="1" />
           <entry key="txt" value="1" />
         </counts>
@@ -92,23 +95,24 @@
         <counts>
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="31" />
+          <entry key="Python" value="52" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="26" />
           <entry key="gitignore" value="2" />
           <entry key="md" value="142" />
-          <entry key="py" value="33" />
+          <entry key="py" value="313" />
           <entry key="txt" value="230" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="142" />
-          <entry key="PLAIN_TEXT" value="232" />
-          <entry key="Python" value="33" />
+          <entry key="PLAIN_TEXT" value="258" />
+          <entry key="Python" value="313" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -119,101 +123,99 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/student_details_serializer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="225">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/base.py">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/StudentSerializer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2950">
-              <caret line="118" selection-start-line="118" selection-end-line="118" />
+            <state relative-caret-position="350">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/dev.py">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/LectureAttendanceSerializer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="275">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/prod.py">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/LectureAttendance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="138">
+              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/Student.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/FaceIdSerializer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/CapturedFrameSerializer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/CapturedFrame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="250">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/run_camera_client.py">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/LectureAttendanceAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/camera/Camera.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="146">
+              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/WorkingDaySerializer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="184" column="3" selection-start-line="184" selection-start-column="3" selection-end-line="184" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/face/FaceAPIWrapper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="290">
+              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -234,10 +236,12 @@
       <find>face</find>
       <find>FACE</find>
       <find>.json</find>
+      <find>get_queryset</find>
     </findStrings>
     <dirStrings>
       <dir />
       <dir>D:\Code\Python\CT83-PC\Facial-Recognition-Attendance-System\code\raspberry-pi-client</dir>
+      <dir>D:\Code\Python\CT83-PC\Facial-Recognition-Attendance-System</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -246,8 +250,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/code/shared/models/Lecture.py" />
-        <option value="$PROJECT_DIR$/code/shared/models/Day.py" />
         <option value="$PROJECT_DIR$/code/shared/models/model_setup.py" />
         <option value="$PROJECT_DIR$/code/shared/models/Student.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/home/models.py" />
@@ -275,8 +277,6 @@
         <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings/prod.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings/dev.py" />
-        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/CapturedFrame.py" />
-        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/LectureAttendance.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/tests.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/attendance/urls.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/FaceId.py" />
@@ -297,6 +297,10 @@
         <option value="$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings/base.py" />
         <option value="$PROJECT_DIR$/code/django-server/fras/fras/settings/test.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/views/StudentDetails.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/serializers/student_details_serializer.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/LectureAttendance.py" />
+        <option value="$PROJECT_DIR$/code/django-server/fras/attendance/models/CapturedFrame.py" />
       </list>
     </option>
   </component>
@@ -306,14 +310,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/code/angular_ui/fras-ui/package.json" />
-    </packageJsonPaths>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="1354" />
+    <option name="y" value="120" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -322,7 +321,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -345,12 +343,40 @@
               <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="raspberry-pi-client" type="462c0819:PsiDirectoryNode" />
+              <item name="django-server" type="462c0819:PsiDirectoryNode" />
+              <item name="fras" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="django-server" type="462c0819:PsiDirectoryNode" />
+              <item name="fras" type="462c0819:PsiDirectoryNode" />
+              <item name="attendance" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="django-server" type="462c0819:PsiDirectoryNode" />
+              <item name="fras" type="462c0819:PsiDirectoryNode" />
+              <item name="attendance" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="django-server" type="462c0819:PsiDirectoryNode" />
+              <item name="fras" type="462c0819:PsiDirectoryNode" />
+              <item name="attendance" type="462c0819:PsiDirectoryNode" />
+              <item name="serializers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -365,19 +391,19 @@
     <property name="ts.external.directory.path" value="D:\Code\Python\CT83-PC\Facial-Recognition-Attendance-System\code\angular_ui\fras-ui\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\Python\CT83-PC\Facial-Recognition-Attendance-System\code\django-server\fras\attendance\serializers" />
+      <recent name="D:\Code\Python\CT83-PC\Facial-Recognition-Attendance-System\code\raspberry-pi-client" />
+      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\django-server\fras\attendance\serializers" />
+      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\django-server\fras\attendance\views" />
+      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\django-server\fras\rest_api\serializers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\django-server\fras\attendance\models" />
       <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\django-server\fras\fras" />
       <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\shared\models" />
       <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\raspberry-pi-client\face\images\Peter_Hook" />
       <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\raspberry-pi-client\face\images\Rohan_Sawant\test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Code\Python\CT83-PC\Facial-Recognition-Attendance-System\code\raspberry-pi-client" />
-      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\django-server\fras\attendance\serializers" />
-      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\django-server\fras\attendance\views" />
-      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\django-server\fras\rest_api\serializers" />
-      <recent name="D:\Google Drive\College\Final Project\Facial-Recognition-Attendance-System\code\raspberry-pi-client\face\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -909,22 +935,21 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" x="556" y="48" width="328" height="804" id="Project" order="1" visible="true" weight="0.1401919" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" weight="0.329718" />
+      <window_info active="true" id="Structure" order="0" sideWeight="0.5010846" side_tool="true" visible="true" weight="0.14179105" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info content_ui="combo" x="556" y="48" width="328" height="804" id="Project" order="2" sideWeight="0.4989154" visible="true" weight="0.14179105" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" x="29" y="297" width="1382" height="306" id="Run" order="2" visible="true" weight="0.24295011" />
+      <window_info anchor="bottom" x="29" y="297" width="1382" height="306" id="Run" order="2" weight="0.24295011" />
       <window_info anchor="bottom" id="Database Changes" order="3" weight="0.32936507" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.4164859" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.329602" />
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3727145" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.329602" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.3286334" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.3991323" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -932,6 +957,8 @@
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.329602" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.329602" />
       <window_info anchor="bottom" id="TODO" order="15" />
+      <window_info anchor="bottom" id="TypeScript" order="16" weight="0.329718" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="17" weight="0.329718" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Database" order="2" weight="0.32942432" />
@@ -978,25 +1005,9 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://2d10ba2b-c3a4-439b-aa04-605730e7d327/schema/main/table/attendance_lectureattendance_captured_frames" />
-    <entry file="das://2d10ba2b-c3a4-439b-aa04-605730e7d327/schema/main/table/attendance_lectureattendance" />
     <entry file="file://D:/MegaSync/Languages/Python/CT83-PC/venv/Facial-Recognition-Attendance-System-Server/Lib/site-packages/django/db/models/fields/related.py" />
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/LectureAttendanceAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/MegaSync/Languages/Python/CT83-PC/venv/Facial-Recognition-Attendance-System-Server/Lib/site-packages/django/db/models/fields/__init__.py" />
     <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings.py" />
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/CapturedFrame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -1011,63 +1022,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/CapturedFrameSerializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/MegaSync/Languages/Python/CT83-PC/venv/Facial-Recognition-Attendance-System-Server/Lib/site-packages/django/db/models/manager.py" />
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/WorkingDaySerializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/LectureAttendance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/FaceIdSerializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="61" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/LectureAttendanceSerializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/StudentSerializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/WorkingDayAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f1c904d0-7fe6-4bbf-8479-ef98ca8cb224/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1081,34 +1036,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/CapturedFrameAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/FaceIdViewset.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/StudentList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../venv/Facial-Recognition-Attendance-System-Server/Lib/site-packages/rest_framework/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="351" column="6" selection-start-line="351" selection-start-column="6" selection-end-line="351" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -1136,9 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1147,13 +1075,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/django-server/fras/home/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/Student.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/django-server/fras/home/views.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1178,16 +1099,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/database/database_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/database/database_utils.py" />
     <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1199,22 +1111,10 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/face/face_detect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/face/FaceAPIWrapper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -1227,9 +1127,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1240,31 +1137,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/run_camera_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2950">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/CONSTANTS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1279,8 +1155,152 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/run_camera_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/fras/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2950">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/WorkingDayAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/FaceIdViewset.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/CapturedFrameAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/StudentList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/StudentDetails.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1541355570312" expanded="true" signature="294:295" ph="..." />
+            <marker date="1541355570312" expanded="true" signature="294:296" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/student_details_serializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/FaceIdSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/WorkingDaySerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/CapturedFrameSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/LectureAttendanceSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/serializers/StudentSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/Student.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/LectureAttendance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/views/LectureAttendanceAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/django-server/fras/attendance/models/CapturedFrame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
