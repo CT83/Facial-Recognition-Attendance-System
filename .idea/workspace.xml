@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="817089f8-8e5e-492f-9a00-c3c6199cd3b4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Facial-Recognition-Attendance-System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Facial-Recognition-Attendance-System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2d10ba2b-c3a4-439b-aa04-605730e7d327.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/raspberry-pi-client/camera/Camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/raspberry-pi-client/camera/Camera.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/raspberry-pi-client/database/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/raspberry-pi-client/database/database_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/raspberry-pi-client/database/sqlalchemy_example.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/raspberry-pi-client/run_camera_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/raspberry-pi-client/run_camera_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/raspberry-pi-client/temp.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/raspberry-pi-client/temp.png" afterDir="false" />
+    <list default="true" id="817089f8-8e5e-492f-9a00-c3c6199cd3b4" name="Default" comment="Camera Client working...">
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/e2e/tsconfig.e2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/src/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/angular_ui/fras-ui/tslint.json" afterDir="false" />
     </list>
     <ignored path="raspberry-pi-client/FACE_API_KEY.json" />
     <ignored path="code/raspberry-pi-client/FACE_API_KEY.json" />
@@ -112,12 +129,13 @@
           <entry key="gitignore" value="2" />
           <entry key="md" value="142" />
           <entry key="py" value="20" />
+          <entry key="txt" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="142" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="51" />
           <entry key="Python" value="20" />
         </counts>
       </usages-collector>
@@ -162,7 +180,7 @@
         <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/camera/Camera.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -173,8 +191,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="847">
-              <caret line="185" column="9" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
+            <state relative-caret-position="572">
+              <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
             </state>
           </provider>
         </entry>
@@ -308,7 +326,15 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/code/angular_ui/fras-ui/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/code/angular_ui/fras-ui/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -336,14 +362,14 @@
               <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="django-server" type="462c0819:PsiDirectoryNode" />
+              <item name="angular_ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Facial-Recognition-Attendance-System" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="django-server" type="462c0819:PsiDirectoryNode" />
-              <item name="fras" type="462c0819:PsiDirectoryNode" />
+              <item name="angular_ui" type="462c0819:PsiDirectoryNode" />
+              <item name="fras-ui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Facial-Recognition-Attendance-System" type="b2602c69:ProjectViewProjectNode" />
@@ -862,7 +888,21 @@
       <option name="project" value="LOCAL" />
       <updated>1537062105699</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Updated gitignore">
+      <created>1541330750793</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1541330750793</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Camera Client working...">
+      <created>1541330922602</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1541330922602</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -899,6 +939,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" x="556" y="48" width="328" height="804" id="Project" order="1" visible="true" weight="0.30863538" />
@@ -935,8 +976,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Added django models, removed shared" />
-    <MESSAGE value="Fixed admin" />
     <MESSAGE value="Added new models, get_present_students()" />
     <MESSAGE value="Updated table" />
     <MESSAGE value="Fixed migrations, registered models in admin panel" />
@@ -960,7 +999,9 @@
     <MESSAGE value="Added basic unit test, refactored settings, updated models" />
     <MESSAGE value="Updated foreign key" />
     <MESSAGE value="Added unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added unit tests" />
+    <MESSAGE value="Updated gitignore" />
+    <MESSAGE value="Camera Client working..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Camera Client working..." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1258,7 +1299,7 @@
     <entry file="file://$PROJECT_DIR$/code/raspberry-pi-client/camera/Camera.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -1267,8 +1308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="847">
-          <caret line="185" column="9" selection-start-line="185" selection-start-column="9" selection-end-line="185" selection-end-column="9" />
+        <state relative-caret-position="572">
+          <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
         </state>
       </provider>
     </entry>
