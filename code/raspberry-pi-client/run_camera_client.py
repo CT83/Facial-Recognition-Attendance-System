@@ -82,14 +82,16 @@ def main():
     # GET http://localhost:8000/api/v1/users/
     response = api.students.get()
 
+    print("Capturing Image every ", CAPTURE_INTERVAL)
+
     while 1:
-        print("Capturing Image every ", CAPTURE_INTERVAL)
         image = camera.capture_image()
         cv2.imwrite(image_file, image)
         cv2.imshow("Camera Image", image)
         cv2.waitKey(1)
         face_ids = face_api_wrapper.detect_faces(image=image_file)
         if face_ids:
+            # TODO Send the face id to server here.
             identified_person_id = \
                 face_api_wrapper.identify_face(face_ids=face_ids,
                                                large_person_group=person_group_id)

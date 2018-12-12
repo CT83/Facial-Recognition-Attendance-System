@@ -1,3 +1,5 @@
+import datetime
+
 from django.db import models
 
 
@@ -6,6 +8,8 @@ class LectureAttendance(models.Model):
                                     related_name="lecture_attendances",
                                     on_delete=models.CASCADE)
     lecture_name = models.CharField(max_length=100)
+    start = models.DateField(default=datetime.datetime.now())
+    end = models.DateField(default=datetime.datetime.now())
 
     def __str__(self):
         return self.lecture_name + " - " + str(self.working_day)
