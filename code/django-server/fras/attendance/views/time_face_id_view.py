@@ -1,8 +1,13 @@
+from datetime import date
+
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from attendance.utils import get_or_create_current_frame, convert_str_to_date
+from attendance.models.CapturedFrame import CapturedFrame
+from attendance.models.LectureAttendance import LectureAttendance
+from attendance.models.Student import Student
+from attendance.models.WorkingDay import WorkingDay
 
 
 class TimeFaceIdView(APIView):
@@ -14,11 +19,16 @@ class TimeFaceIdView(APIView):
 
     def post(self, request, format=None):
         print(request.data)
-        current_time = request.data['current_time']
-
+        lecture_number = request.data['lecture_number']
         face_ids = request.data['face_ids']
 
-        get_or_create_current_frame(convert_str_to_date(current_time))
+        students = [Student.objects.filter(face_id=face_id).first() for face_id in face_ids]
+
+        working_day = WorkingDay.objects.filter(date=date.today()).first()
+        lecture_attendance = LectureAttendance.objects.filter(working_day=working_day).all()[int(lecture_number)]
+        captured_frame = CapturedFrame(lecture_attendance=lecture_attendance, students=students)
+        captured_frame.save()
+
         return Response(request.data, status=status.HTTP_201_CREATED)
 
     @classmethod

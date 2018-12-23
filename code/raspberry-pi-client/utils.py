@@ -1,3 +1,4 @@
+import datetime
 import io
 
 
@@ -69,3 +70,9 @@ def load_dict_from_file(file_name):
         import json
         data = json.load(data_file)
         return data
+
+
+def get_lecture_number(time=datetime.datetime.now()):
+    """Convert current hour to lecture indices"""
+    idx = time.hour - 9
+    return idx
