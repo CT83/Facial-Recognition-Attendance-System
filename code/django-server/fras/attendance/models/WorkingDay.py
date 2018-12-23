@@ -21,6 +21,5 @@ class WorkingDay(models.Model):
 
         for student in present_students:
             if present_students.count(student) > 0:
-                print(present_students_day)
                 present_students_day.add(student)
         return present_students_day

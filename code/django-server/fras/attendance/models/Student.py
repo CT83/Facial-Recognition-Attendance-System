@@ -23,3 +23,14 @@ class Student(models.Model):
                 present_days.append(working_day)
 
         return present_days
+
+    def get_absent_days(self):
+        from attendance.models.WorkingDay import WorkingDay
+
+        present_days = []
+
+        for working_day in WorkingDay.objects.all():
+            if self not in working_day.get_present_students():
+                present_days.append(working_day)
+
+        return present_days

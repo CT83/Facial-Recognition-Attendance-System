@@ -20,5 +20,9 @@ class StudentDetailsSerializer(serializers.ModelSerializer):
         else:
             return 0
 
-    def get_total_absent_days(self, obj):
-        return 222
+    @staticmethod
+    def get_total_absent_days(obj):
+        if obj.get_absent_days():
+            return len(obj.get_absent_days())
+        else:
+            return 0
