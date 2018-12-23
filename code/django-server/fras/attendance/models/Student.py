@@ -12,3 +12,14 @@ class Student(models.Model):
 
     def get_details(self):
         return self.full_name + " " + self.face_id
+
+    def get_present_days(self):
+        from attendance.models.WorkingDay import WorkingDay
+
+        present_days = []
+
+        for working_day in WorkingDay.objects.all():
+            if self in working_day.get_present_students():
+                present_days.append(working_day)
+
+        return present_days
