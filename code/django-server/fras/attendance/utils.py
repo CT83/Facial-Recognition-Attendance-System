@@ -35,6 +35,8 @@ def create_database():
         student.save()
 
     if create_working_days:
+        working_day = WorkingDay(date=date.today())
+        working_day.save()
         working_day = WorkingDay(date=date.today() - timedelta(1))
         working_day.save()
 
@@ -42,6 +44,14 @@ def create_database():
         working_day.save()
 
         working_day = WorkingDay(date=date.today() - timedelta(3))
+        working_day.save()
+        working_day = WorkingDay(date=date.today() - timedelta(4))
+        working_day.save()
+
+        working_day = WorkingDay(date=date.today() - timedelta(5))
+        working_day.save()
+
+        working_day = WorkingDay(date=date.today() - timedelta(6))
         working_day.save()
 
     if create_lecture_attendances:

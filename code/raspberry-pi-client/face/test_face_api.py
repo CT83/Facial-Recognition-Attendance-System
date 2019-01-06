@@ -40,16 +40,16 @@ class TestFaceAPIWrapper(unittest.TestCase):
         test_image = 'images/Peter_hook/test/11.jpg'
         face_ids = self.face_api.detect_faces(image=test_image)
         identified_person_id = \
-            self.face_api.identify_face(face_ids=face_ids,
-                                        large_person_group=self.person_group) or " "
+            self.face_api.identify_faces(face_ids=face_ids,
+                                         large_person_group=self.person_group) or " "
         self.assertEqual(identified_person_id, self.person_id)
 
     def test_correct_identification_different_persons(self):
         test_image_2 = 'images/detection1.jpg'
         face_ids = self.face_api.detect_faces(image=test_image_2)
         identified_person_id = \
-            self.face_api.identify_face(face_ids=face_ids,
-                                        large_person_group=self.person_group) or " "
+            self.face_api.identify_faces(face_ids=face_ids,
+                                         large_person_group=self.person_group) or " "
         self.assertNotEqual(identified_person_id, self.person_id)
 
     def test_create_group(self):

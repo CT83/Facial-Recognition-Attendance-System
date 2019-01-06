@@ -25,7 +25,9 @@ class TimeFaceIdView(APIView):
 
         working_day = WorkingDay.objects.filter(date=date.today()).first()
         lecture_attendance = LectureAttendance.objects.filter(working_day=working_day).all()[int(lecture_number)]
-        captured_frame = CapturedFrame(lecture_attendance=lecture_attendance, students=students)
+        captured_frame = CapturedFrame(lecture_attendance=lecture_attendance)
+        captured_frame.save()
+        [captured_frame.students.add(student) for student in students]
         captured_frame.save()
 
         return Response(request.data, status=status.HTTP_201_CREATED)

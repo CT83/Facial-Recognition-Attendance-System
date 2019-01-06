@@ -41,8 +41,8 @@ def identify_person_in_image(image_path,
     if not face_ids:
         return None
     identified_person_id = face_api_wrapper \
-        .identify_face(face_ids=face_ids,
-                       large_person_group=FACE_GROUP_ID)
+        .identify_faces(face_ids=face_ids,
+                        large_person_group=FACE_GROUP_ID)
     if identified_person_id:
         try:
             person_name = person_id_name[identified_person_id]

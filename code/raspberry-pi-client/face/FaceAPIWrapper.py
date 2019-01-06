@@ -72,20 +72,22 @@ class FaceAPIWrapper:
         return res
 
     @staticmethod
-    def identify_face(face_ids, large_person_group,
-                      person_group_id=None, max_candidates_return=1,
-                      threshold=None):
+    def identify_faces(face_ids, large_person_group,
+                       person_group_id=None, max_candidates_return=1,
+                       threshold=None):
         identify_results = CF.face.identify(face_ids,
                                             large_person_group_id=large_person_group,
                                             person_group_id=person_group_id,
                                             max_candidates_return=max_candidates_return,
                                             threshold=threshold
                                             )
-        try:
-            person_id = identify_results[0]['candidates'][0]['personId']
-        except IndexError as ie:
-            person_id = None
-        return person_id
+        person_ids = []
+
+        for candidate in identify_results[0]['candidates']:
+            person_id = candidate['personId']
+            person_ids.append(person_id)
+
+        return person_ids
 
 
 def main():
@@ -117,7 +119,7 @@ def main():
         face_api.add_faces_to_person(person_group=person_group, person_id=person_id, image_url=image_url)
     face_api.train_group(person_group)
     face_ids = face_api.detect_faces(image=test_image)
-    identified_person_id = face_api.identify_face(face_ids=face_ids, large_person_group=person_group) or " "
+    identified_person_id = face_api.identify_faces(face_ids=face_ids, large_person_group=person_group) or " "
     if identified_person_id in person_id:
         print(test_image, " and training data are of the same person")
     else:

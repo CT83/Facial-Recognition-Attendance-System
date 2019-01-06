@@ -2,6 +2,7 @@ import os
 import time
 from pprint import pprint
 
+import cv2
 import requests
 
 from CONSTANTS import CURRENT_IMAGE_FILE, FACE_API_KEY, FACE_BASE_URL, DEFAULT_PERSON_GROUP, CAPTURE_INTERVAL, \
@@ -61,38 +62,28 @@ def main():
     camera = Camera()
     face_api_wrapper = FaceAPIWrapper(FACE_API_KEY, FACE_BASE_URL)
 
-    time_face_id_dict = {
-        'lecture_number': get_lecture_number(),
-        'face_ids': ["e376f233-70b3-4b70-a30e-44b7990192bd",
-                     "810as202ff-6f6sa-4582-a3sa7f97eb67ad"]
-    }
-
-    r = requests.post(REST_SERVER_URL + 'time-face-id', data={
-        'lecture_number': get_lecture_number(),
-        'face_ids': [{"e376f233-70b3-4b70-a30e-44b7990192bd"},
-                     {"810as202ff-6f6sa-4582-a3sa7f97eb67ad"}]
-    })
-    print(r)
-
     print("Capturing Image every ", CAPTURE_INTERVAL)
 
-    # while 1:
-    #     image = camera.capture_image()
-    #     cv2.imwrite(image_file, image)
-    #     cv2.imshow("Camera Image", image)
-    #     cv2.waitKey(1)
-    #     face_ids = face_api_wrapper.detect_faces(image=image_file)
-    #     if face_ids:
-    #         # TODO Send the face id to server here.
-    #         identified_person_id = \
-    #             face_api_wrapper.identify_face(face_ids=face_ids,
-    #                                            large_person_group=person_group_id)
-    #         if identified_person_id:
-    #             try:
-    #                 pass
-    #             except IndexError as ie:
-    #                 pass
-    #     time.sleep(CAPTURE_INTERVAL)
+    while 1:
+        image = camera.capture_image()
+        cv2.imwrite(image_file, image)
+        cv2.imshow("Camera Image", image)
+        cv2.waitKey(1)
+        face_ids = face_api_wrapper.detect_faces(image=image_file)
+        if face_ids:
+            # TODO Send the face id to server here.
+            person_ids = \
+                face_api_wrapper.identify_faces(face_ids=face_ids,
+                                                large_person_group=person_group_id)
+            req_ids = [{id} for id in person_ids]
+
+            r = requests.post(REST_SERVER_URL + 'time-face-id', data={
+                'lecture_number': get_lecture_number(),
+                'face_ids': req_ids
+            })
+            print(r)
+
+        time.sleep(CAPTURE_INTERVAL)
 
 
 if __name__ == '__main__':

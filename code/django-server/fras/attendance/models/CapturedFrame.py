@@ -9,6 +9,3 @@ class CapturedFrame(models.Model):
                                            on_delete=models.CASCADE)
     captured_at = models.DateTimeField(auto_now=True)
     students = models.ManyToManyField(Student)
-
-    def __str__(self):
-        return "{}{}{}".format(self.lecture_attendance, self.captured_at, self.students)

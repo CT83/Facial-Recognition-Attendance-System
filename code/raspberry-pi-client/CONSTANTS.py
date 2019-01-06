@@ -12,7 +12,11 @@ SENDER_EMAIL = 'collegerohansawantct83@gmail.com'
 SENDER_PASSWORD = 'eminemcybertech83'
 RECEIVER_EMAIL = '3rohansawantct83@gmail.com'
 
-FACE_API_KEY = load_dict_from_file('FACEAPI_KEY.json')['face_api_key']
+try:
+    FACE_API_KEY = load_dict_from_file('FACEAPI_KEY.json')['face_api_key']
+except FileNotFoundError:
+    FACE_API_KEY = ""
+
 FACE_BASE_URL = 'https://centralindia.api.cognitive.microsoft.com/face/v1.0'
 
 FACE_PERSON_ID_NAME_DICT = {'aae2f120-20d6-4fa7-b34c-f1dbe7aa09a9': 'Tanmay Sawant'}
