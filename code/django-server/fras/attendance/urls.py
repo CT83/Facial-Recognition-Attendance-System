@@ -20,6 +20,6 @@ router.register('face-id', FaceIdViewset)
 # router.register('time-face-id', TimeFaceIdView, 'TimeFaceIdView')
 
 urlpatterns = [
-    url('time-face-id$', TimeFaceIdView.as_view(), name='time_face_id'),
+    url('time-face-id', TimeFaceIdView.as_view(), name='time_face_id', ),
     url('', include(router.urls)),
 ]

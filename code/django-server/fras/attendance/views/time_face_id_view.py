@@ -18,9 +18,8 @@ class TimeFaceIdView(APIView):
     """
 
     def post(self, request, format=None):
-        print(request.data)
         lecture_number = request.data['lecture_number']
-        face_ids = request.data['face_ids']
+        face_ids = request.POST.getlist('face_ids')
 
         students = [Student.objects.filter(face_id=face_id).first() for face_id in face_ids]
 

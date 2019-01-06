@@ -15,6 +15,8 @@
           <option value="Commons.Variables.SERVER_PORT" />
           <option value="PySide.QtCore.QString" />
           <option value="django.db.models.fields.related.ManyToManyField.all" />
+          <option value="drest.api.API.students" />
+          <option value="drest.api.API.time_face_id" />
         </list>
       </option>
     </inspection_tool>
