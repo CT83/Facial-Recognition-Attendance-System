@@ -23,3 +23,6 @@ class WorkingDay(models.Model):
             if present_students.count(student) > 0:
                 present_students_day.add(student)
         return present_students_day
+
+    def get_absent_students(self):
+        pass
