@@ -14,7 +14,7 @@ const routes: Routes = [
     component: DetailsComponent
   },
   {
-    path: 'attendance-table/',
+    path: 'attendance-table',
     component: AttendanceTableComponent
   }
 ];

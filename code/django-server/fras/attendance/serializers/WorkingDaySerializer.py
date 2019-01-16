@@ -25,7 +25,8 @@ class WorkingDaySerializer(serializers.ModelSerializer):
         if obj.get_present_students():
             students = obj.get_present_students()
             serializer = StudentSerializer(students, many=True)
-            return serializer.data
+            # return serializer.data
+            return len(students)
 
         else:
             return []
