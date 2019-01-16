@@ -7,12 +7,13 @@ from face.FaceAPIWrapper import FaceAPIWrapper
 key = FACE_API_KEY
 base_url = FACE_BASE_URL
 
-# image_urls = os.listdir("images/Rohan_Sawant/train")
-image_urls = [os.path.join("images/Tanmay_Sawant/", f) for f in os.listdir("images/Tanmay_Sawant/")]
+person_folder = "Rohan_Sawant"
+person_name = "Rohan Sawant"
+image_urls = [os.path.join("images/" + person_folder + "/train/", f)
+              for f in os.listdir("images/" + person_folder + "/train/")]
 print("Images:", image_urls)
 
-person_group = 'allowed_persons'
-person_name = 'Tanmay Sawant'
+person_group = FACE_GROUP_ID
 
 face_api = FaceAPIWrapper(key, base_url)
 print(face_api.list_groups())
@@ -43,17 +44,20 @@ def identify_person_in_image(image_path,
     identified_person_id = face_api_wrapper \
         .identify_faces(face_ids=face_ids,
                         large_person_group=FACE_GROUP_ID)
+    print(identified_person_id)
     if identified_person_id:
         try:
-            person_name = person_id_name[identified_person_id]
-        except IndexError as ie:
+            person_name = person_id_name[identified_person_id[0]]
+        except Exception as e:
+            print(e)
             person_name = None
         return person_name
     else:
         return None
 
 
-test_image_urls = [os.path.join("images/Tanmay_Sawant/test", f) for f in os.listdir("images/Tanmay_Sawant/test")]
+test_image_urls = [os.path.join("images/" + person_folder + "/train", f)
+                   for f in os.listdir("images/" + person_folder + "/train")]
 print("Test Images:", test_image_urls)
 for test_image_url in test_image_urls:
     print("Person in Image is :", identify_person_in_image(test_image_url))
