@@ -8,7 +8,7 @@ from attendance.serializers.StudentSerializer import StudentSerializer
 class WorkingDaySerializer(serializers.ModelSerializer):
     class Meta:
         model = WorkingDay
-        fields = ('date', 'lecture_attendances', 'present_students', 'absent_students')
+        fields = ('id', 'date', 'lecture_attendances', 'present_students', 'absent_students')
 
     lecture_attendances = LectureAttendanceSerializer(many=True)
     present_students = serializers.SerializerMethodField()

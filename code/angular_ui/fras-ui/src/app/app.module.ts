@@ -11,6 +11,7 @@ import { AttendanceTableComponent } from './attendance-table/attendance-table.co
 
 import {MatTableModule} from '@angular/material'
 import {AttendanceService} from './services/attendance.service';
+import { WorkingDayDetailsComponent } from './working-day-details/working-day-details.component';
 
 
 
@@ -21,6 +22,7 @@ import {AttendanceService} from './services/attendance.service';
     StudentsComponent,
     DetailsComponent,
     AttendanceTableComponent,
+    WorkingDayDetailsComponent,
 
   ],
   imports: [

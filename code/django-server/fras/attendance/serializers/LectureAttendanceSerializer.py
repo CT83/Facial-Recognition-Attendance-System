@@ -13,7 +13,10 @@ class LectureAttendanceSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = LectureAttendance
-        fields = ('working_day', 'lecture_name')
+        fields = ('working_day', 'lecture_name', 'present_students', 'absent_students')
+
+    present_students = serializers.SerializerMethodField()
+    absent_students = serializers.SerializerMethodField()
 
     def create(self, validated_data):
         working_day = validated_data.pop('working_day')
@@ -22,3 +25,18 @@ class LectureAttendanceSerializer(serializers.ModelSerializer):
         lecture_attendance = LectureAttendance(working_day=working_day, lecture_name=lecture_name)
         lecture_attendance.save()
         return lecture_attendance
+
+    @staticmethod
+    def get_present_students(obj):
+        if obj.get_present_students():
+            students = obj.get_present_students()
+            return len(students)
+        else:
+            return 0
+
+    @staticmethod
+    def get_absent_students(obj):
+        if obj.get_no_absent_students():
+            return obj.get_no_absent_students()
+        else:
+            return 0

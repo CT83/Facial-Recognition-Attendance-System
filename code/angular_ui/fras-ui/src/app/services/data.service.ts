@@ -17,4 +17,9 @@ export class DataService {
   getStudentDetails(student_id) {
     return this.http.get('http://localhost:8000/student-details/' + student_id);
   }
+
+
+  getWorkingDayDetails(workingDay_id) {
+    return this.http.get('http://localhost:8000/working-days/' + workingDay_id);
+  }
 }

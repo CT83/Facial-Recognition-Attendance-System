@@ -1,0 +1,15 @@
+<h1>{{ $working_day.date }}</h1>
+
+<ul>
+  <li><strong>Present Students</strong> {{ $working_day.present_students }}</li>
+  <li><strong>Absent Students</strong> {{ $working_day.absent_students }}</li>
+  
+  <h3>Lectures</h3>
+  <div *ngFor="let item of $working_day.lecture_attendances;">
+    <li><strong>{{ item.lecture_name }}</strong><br>
+      Present:{{item.present_students}}<br>
+      Absent:{{item.absent_students}}<br>
+    </li>
+    
+  </div>
+</ul>

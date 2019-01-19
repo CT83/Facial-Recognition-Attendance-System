@@ -2,6 +2,8 @@ import datetime
 
 from django.db import models
 
+from attendance.models.Student import Student
+
 
 class LectureAttendance(models.Model):
     working_day = models.ForeignKey('attendance.WorkingDay',
@@ -25,3 +27,12 @@ class LectureAttendance(models.Model):
             if students_in_frames.count(student) > 0:
                 present_students.add(student)
         return present_students
+
+    def get_no_absent_students(self):
+        present = self.get_present_students()
+        absent_count = len(Student.objects.all()) - len(present)
+        return absent_count
+
+    def get_absent_students(self):
+        # TODO Implement this
+        raise NotImplemented

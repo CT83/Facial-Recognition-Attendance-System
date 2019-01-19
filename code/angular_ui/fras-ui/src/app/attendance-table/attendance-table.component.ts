@@ -12,7 +12,7 @@ import { AttendanceService } from '../services/attendance.service';
 export class AttendanceTableComponent implements OnInit {
 
   dataSource = new WorkingDaysDataSource(this.workingDaysService);
-  displayedColumns = ['date', 'present_students'];
+  displayedColumns = ['id','date', 'present_students'];
 
   constructor(private workingDaysService: AttendanceService) { }
 
