@@ -20,7 +20,7 @@ def create_database():
     from attendance.models.Student import Student
     from attendance.models.WorkingDay import WorkingDay
 
-    create_students = False
+    create_students = True
     create_working_days = True
     create_lecture_attendances = True
 

@@ -22,4 +22,9 @@ export class DataService {
   getWorkingDayDetails(workingDay_id) {
     return this.http.get('http://localhost:8000/working-days/' + workingDay_id);
   }
+
+
+  getLectureAttendanceDetails(workingDay_id) {
+    return this.http.get('http://localhost:8000/working-days/' + workingDay_id);
+  }
 }

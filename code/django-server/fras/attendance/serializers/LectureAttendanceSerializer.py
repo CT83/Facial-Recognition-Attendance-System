@@ -36,7 +36,7 @@ class LectureAttendanceSerializer(serializers.ModelSerializer):
 
     @staticmethod
     def get_absent_students(obj):
-        if obj.get_no_absent_students():
-            return obj.get_no_absent_students()
+        if len(obj.get_absent_students()):
+            return len(obj.get_absent_students())
         else:
             return 0

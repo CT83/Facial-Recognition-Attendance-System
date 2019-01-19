@@ -34,5 +34,8 @@ class LectureAttendance(models.Model):
         return absent_count
 
     def get_absent_students(self):
-        # TODO Implement this
-        raise NotImplemented
+        absent_students = []
+        for student in Student.objects.all():
+            if student not in self.get_present_students():
+                absent_students.append(student)
+        return absent_students
