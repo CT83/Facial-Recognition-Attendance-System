@@ -9,7 +9,7 @@ import { DataService } from '../services/data.service';
 })
 export class LectureAttendanceDetailsComponent implements OnInit {
 
-  $lecture_attendance: Object;
+  $lecture_attendance: any;
 
   constructor(private route: ActivatedRoute, private data: DataService) {
     this.route.params.subscribe(params => this.$lecture_attendance = params.id);

@@ -9,7 +9,7 @@ import { DataService } from '../services/data.service';
 })
 export class WorkingDayDetailsComponent implements OnInit {
 
-  $working_day: Object;
+  $working_day: any;
 
   constructor(private route: ActivatedRoute, private data: DataService) {
     this.route.params.subscribe(params => this.$working_day = params.id);
