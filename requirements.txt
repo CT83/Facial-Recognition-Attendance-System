@@ -5,6 +5,7 @@ Django==2.1.3
 django-cors-headers==2.4.0
 djangorestframework==3.9.0
 drest==0.9.12
+gunicorn==19.9.0
 httplib2==0.12.0
 idna==2.8
 imutils==0.5.2
