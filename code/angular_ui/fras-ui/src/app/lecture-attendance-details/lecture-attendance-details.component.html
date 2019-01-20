@@ -1,3 +1,23 @@
-<p>
-  lecture-attendance-details works!
-</p>
+<h1>{{ $lecture_attendance.working_day }} - {{ $lecture_attendance.lecture_name }}</h1>
+
+<ul>
+  <li><strong>Present Students:</strong> {{ $lecture_attendance.present_students.length }}</li>
+  <li><strong>Absent Students:</strong> {{ $lecture_attendance.absent_students.length }}</li>
+
+  <div *ngIf="$lecture_attendance.present_students.length > 0">
+    <h3>Present Students</h3>
+    <ul *ngFor="let item of $lecture_attendance.present_students;">
+      <li class="blue-text" routerLink="/details/{{item.id}}">{{ item.full_name }}
+      </li>
+    </ul>
+  </div>
+  
+  <div *ngIf="$lecture_attendance.absent_students.length > 0">
+    <h3>Absent Students</h3>
+    <ul *ngFor="let item of $lecture_attendance.absent_students;">
+      <li class="blue-text" routerLink="/details/{{item.id}}">{{ item.full_name }}
+      </li>
+    </ul>
+  </div>
+
+</ul>

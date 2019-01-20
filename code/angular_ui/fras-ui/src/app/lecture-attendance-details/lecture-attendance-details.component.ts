@@ -16,7 +16,7 @@ export class LectureAttendanceDetailsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.data.getWorkingDayDetails(this.$lecture_attendance).subscribe(
+    this.data.getLectureAttendanceDetails(this.$lecture_attendance).subscribe(
       data => this.$lecture_attendance = data
     );
   }

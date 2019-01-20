@@ -2,6 +2,7 @@ from rest_framework import serializers
 
 from attendance.models.LectureAttendance import LectureAttendance
 from attendance.models.WorkingDay import WorkingDay
+from attendance.serializers.StudentSerializer import StudentSerializer
 
 
 class LectureAttendanceSerializer(serializers.ModelSerializer):
@@ -13,7 +14,7 @@ class LectureAttendanceSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = LectureAttendance
-        fields = ('working_day', 'lecture_name', 'present_students', 'absent_students')
+        fields = ('id', 'working_day', 'lecture_name', 'present_students', 'absent_students')
 
     present_students = serializers.SerializerMethodField()
     absent_students = serializers.SerializerMethodField()
@@ -28,15 +29,18 @@ class LectureAttendanceSerializer(serializers.ModelSerializer):
 
     @staticmethod
     def get_present_students(obj):
-        if obj.get_present_students():
+        if len(obj.get_present_students()):
             students = obj.get_present_students()
-            return len(students)
+            serializer = StudentSerializer(students, many=True)
+            return serializer.data
         else:
-            return 0
+            return []
 
     @staticmethod
     def get_absent_students(obj):
         if len(obj.get_absent_students()):
-            return len(obj.get_absent_students())
+            students = obj.get_absent_students()
+            serializer = StudentSerializer(students, many=True)
+            return serializer.data
         else:
-            return 0
+            return []

@@ -25,6 +25,6 @@ export class DataService {
 
 
   getLectureAttendanceDetails(workingDay_id) {
-    return this.http.get('http://localhost:8000/working-days/' + workingDay_id);
+    return this.http.get('http://localhost:8000/lecture-attendances/' + workingDay_id);
   }
 }

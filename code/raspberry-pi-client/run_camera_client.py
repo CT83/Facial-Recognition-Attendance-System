@@ -6,7 +6,7 @@ import cv2
 import requests
 
 from CONSTANTS import CURRENT_IMAGE_FILE, FACE_API_KEY, FACE_BASE_URL, DEFAULT_PERSON_GROUP, CAPTURE_INTERVAL, \
-    REST_SERVER_URL
+    REST_SERVER_URL, FACE_GROUP_ID
 from camera.Camera import Camera
 from face.FaceAPIWrapper import FaceAPIWrapper
 from utils import get_lecture_number
@@ -58,7 +58,7 @@ def initial_setup():
 
 def main():
     image_file = CURRENT_IMAGE_FILE
-    person_group_id = DEFAULT_PERSON_GROUP
+    person_group_id = FACE_GROUP_ID
     camera = Camera()
     face_api_wrapper = FaceAPIWrapper(FACE_API_KEY, FACE_BASE_URL)
 

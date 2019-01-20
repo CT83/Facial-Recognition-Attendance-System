@@ -35,8 +35,15 @@ def create_database():
         student.save()
 
     if create_working_days:
+        working_day = WorkingDay(date=date.today() + timedelta(1))
+        working_day.save()
+
         working_day = WorkingDay(date=date.today())
         working_day.save()
+
+        working_day = WorkingDay(date=date.today())
+        working_day.save()
+
         working_day = WorkingDay(date=date.today() - timedelta(1))
         working_day.save()
 
