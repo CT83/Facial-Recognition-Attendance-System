@@ -31,7 +31,7 @@ def create_database():
         student = Student(full_name='Tanmay Sawant', face_id='e376f233-70b3-4b70-a30e-44b7990192bd')
         student.save()
 
-        student = Student(full_name='Anirudh Iyer', face_id='810as202ff-6f6sa-4582-a3sa7f97eb67ad')
+        student = Student(full_name='Anirudh Iyer', face_id='301a333c-2bcf-45b1-b847-fe9191f2ecaa')
         student.save()
 
     if create_working_days:

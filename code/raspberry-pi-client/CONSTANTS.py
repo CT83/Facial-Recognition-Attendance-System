@@ -22,7 +22,7 @@ FACE_API_KEY = "170fff2406f348459a790f78b16dcd43"
 FACE_BASE_URL = 'https://centralindia.api.cognitive.microsoft.com/face/v1.0'
 
 FACE_PERSON_ID_NAME_DICT = {'da3c26c5-5745-46df-9fa2-8003aed1eff7': 'Tanmay Sawant',
-                            '855de0ff-970f-4b6a-a1d4-557707a7e6c1': 'Anirudh Iyer',
+                            '301a333c-2bcf-45b1-b847-fe9191f2ecaa': 'Anirudh Iyer',
                             'f0b07f85-3d65-4ff4-a1f9-41d1d11edb35': 'Rohan Sawant',
                             }
 FACE_GROUP_ID = 'students'

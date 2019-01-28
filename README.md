@@ -1,5 +1,29 @@
 # Facial Recognition Attendance System using Deep Learning (Machine Learning) with OpenCV, Django in Python
 
+## How to Install - Server?
+
+* Install NodeJS and Angular
+* Install all dependencies `pip install -r requirements.txt`
+* Create Database migrations `python manage.py makemigrations`
+* Migrate Database `python manage.py migrate`
+
+## How to run
+
+1. Start Django Server
+* `cd code/django-server`
+* `python manage.py runserver`
+
+
+2. Start Angular Server
+* `cd code/angular_ui/fras-ui`
+* `ng serve --open`
+
+
+3. Start Camera Client
+* `cd code/raspberry-pi-client`
+* `python run_camera_client.py`
+
+
 ### What are we trying to build?
 
 An attendance system which uses facial recognition to detect which people are present in any image.
@@ -27,12 +51,6 @@ The method of image processing using Face API is very black boxed and does not e
 3. [Know how Python Virtual Environments Work](https://www.youtube.com/watch?v=N5vscPTWKOk)
 4. [Basic Understanding of Git and GitHub](https://www.youtube.com/watch?v=cEGIFZDyszA&list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx)
 5. [Install PyCharm JetBrains IDE](https://www.jetbrains.com/help/pycharm/install-and-set-up-pycharm.html)
-
-### How to Install - Server?
-
-* Install all dependencies `pip install -r requirements.txt`
-* Create Database migrations `python manage.py makemigrations`
-* Migrate Database `python manage.py migrate`
 
 ### Frequently Used Git Commands
 
