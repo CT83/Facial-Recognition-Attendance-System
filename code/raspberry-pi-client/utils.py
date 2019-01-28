@@ -75,4 +75,6 @@ def load_dict_from_file(file_name):
 def get_lecture_number(time=datetime.datetime.now()):
     """Convert current hour to lecture indices"""
     idx = time.hour - 9
+    if idx < 0:
+        idx = 0
     return idx
