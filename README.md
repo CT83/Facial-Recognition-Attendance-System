@@ -10,7 +10,7 @@
 ## How to run
 
 1. Start Django Server
-* `cd code/django-server`
+* `cd code/django-server/fras`
 * `python manage.py runserver`
 
 
