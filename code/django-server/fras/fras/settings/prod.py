@@ -4,7 +4,7 @@ from django.db import connection
 # noinspection PyUnresolvedReferences
 from .base import *
 
-DEBUG = False
+DEBUG = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'un&w%=62vsnnzl4xrc$%vj8-0ex4p(q1afn%za1j=1teb(i_5='
