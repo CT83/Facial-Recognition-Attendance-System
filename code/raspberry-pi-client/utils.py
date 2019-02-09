@@ -77,4 +77,7 @@ def get_lecture_number(time=datetime.datetime.now()):
     idx = time.hour - 9
     if idx < 0:
         idx = 0
+
+    if time.hour > 17:
+        idx = 8
     return idx
