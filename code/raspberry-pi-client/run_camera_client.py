@@ -1,11 +1,9 @@
-import os
 import time
-from pprint import pprint
 
 import cv2
 import requests
 
-from CONSTANTS import CURRENT_IMAGE_FILE, FACE_API_KEY, FACE_BASE_URL, DEFAULT_PERSON_GROUP, CAPTURE_INTERVAL, \
+from CONSTANTS import CURRENT_IMAGE_FILE, FACE_API_KEY, FACE_BASE_URL, CAPTURE_INTERVAL, \
     REST_SERVER_URL, FACE_GROUP_ID
 from camera.Camera import Camera
 from face.FaceAPIWrapper import FaceAPIWrapper
@@ -33,7 +31,7 @@ def main():
             i += 1
             print(i, "Captured at ", time.time())
             if face_ids:
-                # TODO Send the face id to server here.
+                print("Detected Faces...")
                 person_ids = \
                     face_api_wrapper.identify_faces(face_ids=face_ids,
                                                     large_person_group=person_group_id)
@@ -46,52 +44,8 @@ def main():
                 print("Present IDs:", req_ids)
 
             time.sleep(CAPTURE_INTERVAL)
-        except Exception:
-            pass
-
-
-def add_person(person_name, image_urls, person_group=DEFAULT_PERSON_GROUP):
-    print("Name:", person_name)
-    print("Images:", image_urls)
-    face_api = FaceAPIWrapper(FACE_API_KEY, FACE_BASE_URL)
-    person_id = face_api.create_person(person_group=person_group, person_name=person_name)  # Save this
-    print("IMP! PERSON_ID for", person_name, "is", person_id)
-
-    for image_url in image_urls:
-        time.sleep(5)
-        face_api.add_faces_to_person(person_group=person_group,
-                                     person_id=person_id, image_url=image_url)
-        print("Adding ", image_urls.index(image_url), "of ", len(image_urls))
-
-    face_api.train_group(person_group)
-    print("Started Training", person_group, "...")
-    return person_name, person_id
-
-
-def initial_setup():
-    person_group = DEFAULT_PERSON_GROUP
-
-    face_api = FaceAPIWrapper(FACE_API_KEY, FACE_BASE_URL)
-    pprint(face_api.list_groups())
-
-    face_api.delete_group(person_group)
-    face_api.create_group(person_group)
-
-    person_and_images = [
-        ("Tanmay Sawant", "face/images/Tanmay_Sawant/"),
-        ("Rohan Sawant", "face/images/Rohan_Sawant/"),
-        ("Peter Hook", "face/images/Peter_Hook/"),
-    ]
-    person_id_dict = {}
-    for person_name, images_dir in person_and_images:
-        name, id = add_person(person_name,
-                              [os.path.join(images_dir, f) for f in
-                               os.listdir(images_dir)],
-                              person_group=person_group)
-        person_id_dict[id] = name
-    pprint(person_id_dict)
-
-    # image_urls = os.listdir("images/Rohan_Sawant/train")
+        except Exception as e:
+            print(e)
 
 
 if __name__ == '__main__':
