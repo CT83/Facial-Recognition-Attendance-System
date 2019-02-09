@@ -83,9 +83,10 @@ class FaceAPIWrapper:
                                             )
         person_ids = []
 
-        for candidate in identify_results[0]['candidates']:
-            person_id = candidate['personId']
-            person_ids.append(person_id)
+        for identify_result in identify_results:
+            for candidate in identify_result['candidates']:
+                person_id = candidate['personId']
+                person_ids.append(person_id)
 
         return person_ids
 

@@ -12,7 +12,7 @@ export class AttendanceService {
   }
 
   getWorkingDays(): Observable<WorkingDaysData[]> {
-    return this.http.get<WorkingDaysData[]>('http://localhost:8000/working-days/');
+    return this.http.get<WorkingDaysData[]>('https://fras-1.herokuapp.com/working-days/');
   }
 
 }
