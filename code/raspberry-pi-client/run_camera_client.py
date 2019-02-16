@@ -42,7 +42,7 @@ def create_dir_if_not_exists(output_dir):
 
 def main():
     person_group_id = FACE_GROUP_ID
-    display_image = True
+    display_image = False
 
     face_api_wrapper = FaceAPIWrapper(FACE_API_KEY, FACE_BASE_URL)
     create_dir_if_not_exists('temp_images/' + CAMERA_NAME)
