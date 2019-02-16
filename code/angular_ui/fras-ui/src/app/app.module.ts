@@ -9,10 +9,11 @@ import { StudentsComponent } from './students/students.component';
 import { DetailsComponent } from './details/details.component';
 import { AttendanceTableComponent } from './attendance-table/attendance-table.component';
 
-import { MatTableModule, MatButtonModule } from '@angular/material'
+import { MatTableModule, MatButtonModule, MatCard, MatCardModule } from '@angular/material'
 import { AttendanceService } from './services/attendance.service';
 import { WorkingDayDetailsComponent } from './working-day-details/working-day-details.component';
 import { LectureAttendanceDetailsComponent } from './lecture-attendance-details/lecture-attendance-details.component';
+import { RecentCapturedFramesComponent } from './recent-captured-frames/recent-captured-frames.component';
 
 
 
@@ -25,6 +26,7 @@ import { LectureAttendanceDetailsComponent } from './lecture-attendance-details/
     AttendanceTableComponent,
     WorkingDayDetailsComponent,
     LectureAttendanceDetailsComponent,
+    RecentCapturedFramesComponent,
 
   ],
   imports: [
@@ -32,6 +34,7 @@ import { LectureAttendanceDetailsComponent } from './lecture-attendance-details/
     AppRoutingModule,
     HttpClientModule,
     MatTableModule,
+    MatCardModule,
     MatButtonModule,
   ],
   providers: [AttendanceService],

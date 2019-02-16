@@ -10,3 +10,4 @@ class CapturedFrame(models.Model):
     captured_at = models.DateTimeField(auto_now=True)
     students = models.ManyToManyField(Student)
     image_link = models.URLField(blank=True)
+    camera_name = models.TextField(blank=True, default="Camera 1")

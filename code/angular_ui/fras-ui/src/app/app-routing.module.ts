@@ -5,11 +5,16 @@ import { DetailsComponent } from './details/details.component';
 import { AttendanceTableComponent } from './attendance-table/attendance-table.component';
 import { WorkingDayDetailsComponent } from './working-day-details/working-day-details.component';
 import { LectureAttendanceDetailsComponent } from './lecture-attendance-details/lecture-attendance-details.component';
+import { RecentCapturedFramesComponent } from './recent-captured-frames/recent-captured-frames.component';
 
 const routes: Routes = [
   {
     path: '',
     component: StudentsComponent
+  },
+  {
+    path: 'recent-captured-frames',
+    component: RecentCapturedFramesComponent
   },
   {
     path: 'details/:id',

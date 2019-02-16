@@ -61,7 +61,8 @@ def main():
                 requests.post(REST_SERVER_URL + 'time-face-id', data={
                     'lecture_number': get_lecture_number(),
                     'face_ids': req_ids,
-                    'image-link': upload_to_s3(image_filename)
+                    'image-link': upload_to_s3(image_filename),
+                    'camera-name': CAMERA_NAME,
                 })
                 print("Present IDs:", req_ids)
 

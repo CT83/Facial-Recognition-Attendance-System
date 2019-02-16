@@ -7,12 +7,15 @@ import { WorkingDaysData } from '../models/working_days.model';
   providedIn: 'root'
 })
 export class AttendanceService {
+  url: string;
 
   constructor(private http: HttpClient) {
+    // this.url = "https://fras-1.herokuapp.com/"
+    this.url = "http://localhost:8000/"
   }
 
   getWorkingDays(): Observable<WorkingDaysData[]> {
-    return this.http.get<WorkingDaysData[]>('https://fras-1.herokuapp.com/working-days/');
+    return this.http.get<WorkingDaysData[]>(this.url + 'working-days/');
   }
 
 }
