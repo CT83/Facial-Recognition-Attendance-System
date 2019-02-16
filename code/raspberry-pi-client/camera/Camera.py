@@ -40,18 +40,17 @@ class Camera:
     def capture_image(self, usingPiCamera=IS_RASPBERRY_PI):
         if usingPiCamera:
             from picamera.array import PiRGBArray
-            from picamera import PiCamera
 
-            camera = PiCamera()
-            rawCapture = PiRGBArray(camera)
+            with picamera.PiCamera() as camera:
+                rawCapture = PiRGBArray(camera)
 
-            # allow the camera to warmup
-            time.sleep(0.1)
+                # allow the camera to warmup
+                time.sleep(0.1)
 
-            # grab an image from the camera
-            camera.capture(rawCapture, format="bgr")
-            image = rawCapture.array
-            return image
+                # grab an image from the camera
+                camera.capture(rawCapture, format="bgr")
+                image = rawCapture.array
+                return image
         else:
             # Number of frames to throw away while the camera adjusts to light levels
             ramp_frames = 1
