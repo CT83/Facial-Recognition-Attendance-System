@@ -4,13 +4,13 @@ CAMERA_PORT = 0
 IS_RASPBERRY_PI = is_raspberry_pi()
 RESOLUTION_H = 320
 RESOLUTION_W = 320
-CAPTURE_INTERVAL = 5
+CAPTURE_INTERVAL = 15
 GPIO_SWITCH = 24
 
 IMAGE_PATH = 'captured_images/'
-SENDER_EMAIL = 'collegerohansawantct83@gmail.com'
-SENDER_PASSWORD = 'cybertech82'
-RECEIVER_EMAIL = '3rohansawantct83@gmail.com'
+
+AWS_ACCESS_KEY = 'AKIAJJXPMJJP6CMFFKLQ'
+AWS_ACCESS_SECRET_KEY = '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'
 
 # try:
 #     FACE_API_KEY = load_dict_from_file('FACEAPI_KEY.json')['face_api_key']

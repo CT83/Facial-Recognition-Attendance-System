@@ -1,3 +1,4 @@
+boto3
 certifi==2018.11.29
 chardet==3.0.4
 cognitive-face==1.4.2

@@ -8,4 +8,5 @@ class CapturedFrame(models.Model):
                                            related_name="captured_frames",
                                            on_delete=models.CASCADE)
     captured_at = models.DateTimeField(auto_now=True)
-    students = models.ManyToManyField(Student)
+    students = models.ManyToManyField(Student, null=True)
+    image_link = models.URLField(blank=True)

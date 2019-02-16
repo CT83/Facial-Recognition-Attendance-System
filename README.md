@@ -57,6 +57,12 @@ The method of image processing using Face API is very black boxed and does not e
 1. Remove a File from Staging Area `git reset HEAD -- Code/filename.extension`
 
 
+### Setup - Server
+#### Creating Migrations
+1. `SET DJANGO_SETTINGS_MODULE=fras.settings.dev`
+2. `python fras/manage.py makemirations`
+
+
 
 ### FAQ 
 

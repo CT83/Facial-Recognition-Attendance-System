@@ -20,6 +20,7 @@ class TimeFaceIdView(APIView):
     def post(self, request, format=None):
         lecture_number = request.data['lecture_number']
         face_ids = request.POST.getlist('face_ids')
+        image_link = request.data['image-link']
 
         students = [Student.objects.filter(face_id=face_id).first() for face_id in face_ids]
         print("Present Students:")
@@ -27,7 +28,7 @@ class TimeFaceIdView(APIView):
 
         working_day = WorkingDay.objects.filter(date=date.today()).first()
         lecture_attendance = LectureAttendance.objects.filter(working_day=working_day).all()[int(lecture_number)]
-        captured_frame = CapturedFrame(lecture_attendance=lecture_attendance)
+        captured_frame = CapturedFrame(lecture_attendance=lecture_attendance, image_link=image_link)
         captured_frame.save()
 
         [captured_frame.students.add(student) for student in students]

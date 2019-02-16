@@ -21,8 +21,8 @@ def create_database():
     from attendance.models.WorkingDay import WorkingDay
 
     create_students = True
-    create_working_days = True
-    create_lecture_attendances = True
+    create_working_days = False
+    create_lecture_attendances = False
 
     if create_students:
         student = Student(id=1, full_name='Rohan Sawant', face_id='f0b07f85-3d65-4ff4-a1f9-41d1d11edb35')
