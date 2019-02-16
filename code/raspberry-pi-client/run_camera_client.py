@@ -5,7 +5,7 @@ import cv2
 import requests
 
 from CONSTANTS import FACE_API_KEY, FACE_BASE_URL, CAPTURE_INTERVAL, \
-    REST_SERVER_URL, FACE_GROUP_ID, CAMERA_NAME
+    REST_SERVER_URL, FACE_GROUP_ID, CAMERA_NAME, IS_RASPBERRY_PI
 from camera.Camera import Camera
 from face.FaceAPIWrapper import FaceAPIWrapper
 from utils import get_lecture_number
@@ -46,8 +46,11 @@ def main():
             image_filename = 'temp_images/' + CAMERA_NAME + "/" + current_time_to_string() + ".jpg"
             image = camera.current_frame.read()
             cv2.imwrite(image_filename, image)
-            cv2.imshow("Camera Image", image)
-            cv2.waitKey(1)
+
+            if not IS_RASPBERRY_PI:
+                cv2.imshow("Camera Image", image)
+                cv2.waitKey(1)
+
             face_ids = face_api_wrapper.detect_faces(image=image_filename)
             i += 1
             print(i, "Captured at ", time.time())
