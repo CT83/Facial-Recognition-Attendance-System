@@ -64,6 +64,7 @@ def main():
             face_ids = face_api_wrapper.detect_faces(image=image_filename)
             i += 1
             print(i, "Captured at ", time.time())
+            image_link = upload_to_s3(image_filename)
             if face_ids:
                 print("Detected Faces...")
                 person_ids = \
@@ -74,7 +75,7 @@ def main():
                 requests.post(REST_SERVER_URL + 'time-face-id', data={
                     'lecture_number': get_lecture_number(),
                     'face_ids': req_ids,
-                    'image-link': upload_to_s3(image_filename),
+                    'image-link': image_link,
                     'camera-name': CAMERA_NAME,
                 })
                 print("Present IDs:", req_ids)
