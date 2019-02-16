@@ -49,7 +49,7 @@ class Camera:
                 time.sleep(0.1)
 
                 # grab an image from the camera
-                camera.capture(rawCapture, format="bgr")
+                camera.capture(rawCapture, format="rgb")
                 image = rawCapture.array
                 return image
         else:
