@@ -42,8 +42,7 @@ def create_dir_if_not_exists(output_dir):
 
 def main():
     person_group_id = FACE_GROUP_ID
-    camera = Camera()
-    camera.start_capture()
+
     face_api_wrapper = FaceAPIWrapper(FACE_API_KEY, FACE_BASE_URL)
     create_dir_if_not_exists('temp_images/' + CAMERA_NAME)
 
@@ -54,7 +53,7 @@ def main():
     while 1:
         try:
             image_filename = 'temp_images/' + CAMERA_NAME + "/" + current_time_to_string() + ".jpg"
-            image = camera.current_frame.read()
+            image = Camera().capture_image()
             cv2.imwrite(image_filename, image)
 
             if not IS_RASPBERRY_PI:

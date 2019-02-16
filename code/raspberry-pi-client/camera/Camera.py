@@ -25,7 +25,7 @@ class Camera:
         print("Camera Resolution:", resolution)
         cf = VideoStream(usePiCamera=usingPiCamera,
                          resolution=resolution,
-                         framerate=60).start()
+                         framerate=30).start()
         self.current_frame = cf
         time.sleep(2)
 
@@ -37,18 +37,32 @@ class Camera:
         print("Stopping Capture")
         self.current_frame.stop()
 
-    def capture_image(self):
+    def capture_image(self, usingPiCamera=IS_RASPBERRY_PI):
+        if usingPiCamera:
+            from picamera.array import PiRGBArray
+            from picamera import PiCamera
 
-        # Number of frames to throw away while the camera adjusts to light levels
-        ramp_frames = 1
+            camera = PiCamera()
+            rawCapture = PiRGBArray(camera)
 
-        self.camera = cv2.VideoCapture(CAMERA_PORT)
-        _, im = self.camera.read()
-        [self.camera.read() for _ in range(ramp_frames)]
-        # print("Taking image...")
-        _, camera_capture = self.camera.read()
-        del self.camera
-        return camera_capture
+            # allow the camera to warmup
+            time.sleep(0.1)
+
+            # grab an image from the camera
+            camera.capture(rawCapture, format="bgr")
+            image = rawCapture.array
+            return image
+        else:
+            # Number of frames to throw away while the camera adjusts to light levels
+            ramp_frames = 1
+
+            self.camera = cv2.VideoCapture(CAMERA_PORT)
+            _, im = self.camera.read()
+            [self.camera.read() for _ in range(ramp_frames)]
+            # print("Taking image...")
+            _, camera_capture = self.camera.read()
+            del self.camera
+            return camera_capture
 
 
 if __name__ == '__main__':
