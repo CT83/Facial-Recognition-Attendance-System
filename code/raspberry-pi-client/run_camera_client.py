@@ -1,3 +1,4 @@
+import os
 import time
 
 import boto3
@@ -31,11 +32,20 @@ def current_time_to_string():
     return datetime.now().strftime("%Y%m%d_%H%M%S%f")
 
 
+def create_dir_if_not_exists(output_dir):
+    try:
+        os.makedirs(output_dir)
+    except OSError:
+        if not os.path.isdir(output_dir):
+            raise
+
+
 def main():
     person_group_id = FACE_GROUP_ID
     camera = Camera()
     camera.start_capture()
     face_api_wrapper = FaceAPIWrapper(FACE_API_KEY, FACE_BASE_URL)
+    create_dir_if_not_exists('temp_images/' + CAMERA_NAME)
 
     print("Capturing Image every ", CAPTURE_INTERVAL, " seconds...")
 
