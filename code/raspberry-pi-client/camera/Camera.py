@@ -51,6 +51,7 @@ class Camera:
                 # grab an image from the camera
                 camera.capture(rawCapture, format="rgb")
                 image = rawCapture.array
+                image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
                 return image
         else:
             # Number of frames to throw away while the camera adjusts to light levels
