@@ -64,6 +64,7 @@ The method of image processing using Face API is very black boxed and does not e
 2. `python fras/manage.py migrate`
 
 #### Setup Client
+`pip install awscli`
 `aws configure`
 AWS Access Key ID [None]: input your access key
 AWS Secret Access Key [None]: input your secret access key

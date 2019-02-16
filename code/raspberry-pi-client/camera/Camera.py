@@ -1,9 +1,10 @@
 import time
 
-from CONSTANTS import IS_RASPBERRY_PI, CAMERA_PORT, RESOLUTION_H, RESOLUTION_W
-from camera.camera_utils import preview_image
 # noinspection PyUnresolvedReferences
 import cv2
+
+from CONSTANTS import IS_RASPBERRY_PI, CAMERA_PORT, RESOLUTION_H, RESOLUTION_W
+from camera.camera_utils import preview_image
 
 
 class Camera:
@@ -29,7 +30,7 @@ class Camera:
         time.sleep(2)
 
         if not usingPiCamera:
-            frame = imutils.resize(self.current_frame.read(), width=resolution[0])
+            frame = imutils.resize(self.current_frame.read(), width=resolution[0], height=resolution[1])
         # Stream started, call current_frame.read() to get current frame
 
     def stop_capture(self):
