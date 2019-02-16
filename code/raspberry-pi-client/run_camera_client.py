@@ -5,7 +5,7 @@ import cv2
 import requests
 
 from CONSTANTS import FACE_API_KEY, FACE_BASE_URL, CAPTURE_INTERVAL, \
-    REST_SERVER_URL, FACE_GROUP_ID
+    REST_SERVER_URL, FACE_GROUP_ID, CAMERA_NAME
 from camera.Camera import Camera
 from face.FaceAPIWrapper import FaceAPIWrapper
 from utils import get_lecture_number
@@ -43,7 +43,7 @@ def main():
 
     while 1:
         try:
-            image_filename = 'temp_images/' + current_time_to_string() + ".jpg"
+            image_filename = 'temp_images/' + CAMERA_NAME + "/" + current_time_to_string() + ".jpg"
             image = camera.current_frame.read()
             cv2.imwrite(image_filename, image)
             cv2.imshow("Camera Image", image)

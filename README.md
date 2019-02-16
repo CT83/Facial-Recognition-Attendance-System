@@ -60,7 +60,17 @@ The method of image processing using Face API is very black boxed and does not e
 ### Setup - Server
 #### Creating Migrations
 1. `SET DJANGO_SETTINGS_MODULE=fras.settings.dev`
-2. `python fras/manage.py makemirations`
+2. `python fras/manage.py makemigrations`
+2. `python fras/manage.py migrate`
+
+#### Setup Client
+`aws configure`
+AWS Access Key ID [None]: input your access key
+AWS Secret Access Key [None]: input your secret access key
+Default region name [None]: input your region
+Default output format [None]: json
+`aws s3 ls`
+
 
 
 
