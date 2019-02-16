@@ -30,7 +30,7 @@ class Camera:
         time.sleep(2)
 
         if not usingPiCamera:
-            frame = imutils.resize(self.current_frame.read())
+            frame = imutils.resize(self.current_frame.read(), width=resolution[0], height=resolution[1])
         # Stream started, call current_frame.read() to get current frame
 
     def stop_capture(self):
