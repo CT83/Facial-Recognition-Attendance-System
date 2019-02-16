@@ -3,7 +3,7 @@ from utils import is_raspberry_pi
 CAMERA_PORT = 0
 IS_RASPBERRY_PI = is_raspberry_pi()
 RESOLUTION_H = 1640
-RESOLUTION_W = 1232
+RESOLUTION_W = 922
 CAPTURE_INTERVAL = 30
 GPIO_SWITCH = 24
 
