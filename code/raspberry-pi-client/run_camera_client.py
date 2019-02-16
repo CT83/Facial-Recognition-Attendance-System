@@ -64,13 +64,14 @@ def main():
             face_ids = face_api_wrapper.detect_faces(image=image_filename)
             i += 1
             print(i, "Captured at ", time.time())
-            image_link = upload_to_s3(image_filename)
             if face_ids:
                 print("Detected Faces...")
                 person_ids = \
                     face_api_wrapper.identify_faces(face_ids=face_ids,
                                                     large_person_group=person_group_id)
                 req_ids = [{id} for id in person_ids]
+
+                image_link = upload_to_s3(image_filename)
 
                 requests.post(REST_SERVER_URL + 'time-face-id', data={
                     'lecture_number': get_lecture_number(),
