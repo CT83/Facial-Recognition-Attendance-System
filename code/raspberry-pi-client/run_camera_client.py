@@ -6,7 +6,7 @@ import cv2
 import requests
 
 from CONSTANTS import FACE_API_KEY, FACE_BASE_URL, CAPTURE_INTERVAL, \
-    REST_SERVER_URL, FACE_GROUP_ID, CAMERA_NAME, IS_RASPBERRY_PI
+    REST_SERVER_URL, FACE_GROUP_ID, CAMERA_NAME
 from camera.Camera import Camera
 from face.FaceAPIWrapper import FaceAPIWrapper
 from utils import get_lecture_number
@@ -42,6 +42,7 @@ def create_dir_if_not_exists(output_dir):
 
 def main():
     person_group_id = FACE_GROUP_ID
+    display_image = True
 
     face_api_wrapper = FaceAPIWrapper(FACE_API_KEY, FACE_BASE_URL)
     create_dir_if_not_exists('temp_images/' + CAMERA_NAME)
@@ -56,7 +57,7 @@ def main():
             image = Camera().capture_image()
             cv2.imwrite(image_filename, image)
 
-            if not IS_RASPBERRY_PI:
+            if display_image:
                 cv2.imshow("Camera Image", image)
                 cv2.waitKey(1)
 
