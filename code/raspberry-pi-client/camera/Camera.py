@@ -40,8 +40,9 @@ class Camera:
     def capture_image(self, usingPiCamera=IS_RASPBERRY_PI):
         if usingPiCamera:
             from picamera.array import PiRGBArray
+            from picamera import PiCamera
 
-            with picamera.PiCamera() as camera:
+            with PiCamera() as camera:
                 rawCapture = PiRGBArray(camera)
 
                 # allow the camera to warmup
