@@ -1,16 +1,3 @@
-from datetime import date, timedelta
-
-from attendance.models.LectureAttendance import LectureAttendance
-
-
-def get_or_create_current_frame(date_time):
-    p, created = LectureAttendance.objects.get_or_create(
-        first_name='John',
-        last_name='Lennon',
-        defaults={'birthday': date(1940, 10, 9)},
-    )
-
-
 def convert_str_to_date(string):
     from datetime import datetime
     datetime.strptime(string, "%Y-%m-%d %H:%M:%S.%f")
@@ -19,46 +6,29 @@ def convert_str_to_date(string):
 def create_database():
     from attendance.models.Student import Student
     from attendance.models.WorkingDay import WorkingDay
+    from attendance.models.LectureAttendance import LectureAttendance
+    from datetime import date, timedelta
 
     create_students = True
-    create_working_days = False
-    create_lecture_attendances = False
+    create_working_days = True
+    create_lecture_attendances = True
 
     if create_students:
-        student = Student(id=1, full_name='Rohan Sawant', face_id='f0b07f85-3d65-4ff4-a1f9-41d1d11edb35')
+        student = Student(id=1, full_name='Rohan Sawant', face_id='1bf15e0f-3837-493a-8f72-aa3e5e98694f')
         student.save()
 
-        student = Student(id=2, full_name='Tanmay Sawant', face_id='e376f233-70b3-4b70-a30e-44b7990192bd')
+        student = Student(id=2, full_name='Tanmay Sawant', face_id='1d7d18cb-8e0b-498d-80c6-0d95c3d391e0')
         student.save()
 
-        student = Student(id=3, full_name='Anirudh Iyer', face_id='301a333c-2bcf-45b1-b847-fe9191f2ecaa')
+        student = Student(id=3, full_name='Anirudh Iyer', face_id='08ef7629-f8d8-406e-b366-88df696517d8')
         student.save()
 
     if create_working_days:
-        working_day = WorkingDay(date=date.today() + timedelta(1))
-        working_day.save()
+        for i in range(30):
+            working_day = WorkingDay(date=date.today() + timedelta(i))
+            working_day.save()
 
         working_day = WorkingDay(date=date.today())
-        working_day.save()
-
-        working_day = WorkingDay(date=date.today())
-        working_day.save()
-
-        working_day = WorkingDay(date=date.today() - timedelta(1))
-        working_day.save()
-
-        working_day = WorkingDay(date=date.today() - timedelta(2))
-        working_day.save()
-
-        working_day = WorkingDay(date=date.today() - timedelta(3))
-        working_day.save()
-        working_day = WorkingDay(date=date.today() - timedelta(4))
-        working_day.save()
-
-        working_day = WorkingDay(date=date.today() - timedelta(5))
-        working_day.save()
-
-        working_day = WorkingDay(date=date.today() - timedelta(6))
         working_day.save()
 
     if create_lecture_attendances:
@@ -73,4 +43,3 @@ def create_database():
             LectureAttendance(working_day=working_day, lecture_name="Mathematics").save()
             LectureAttendance(working_day=working_day, lecture_name="Biology").save()
 
-    # TODO Complete this and test it later

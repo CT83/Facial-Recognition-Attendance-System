@@ -8,7 +8,7 @@ CAPTURE_INTERVAL = 15
 GPIO_SWITCH = 24
 
 IMAGE_PATH = 'captured_images/'
-CAMERA_NAME = 'camera_2'
+CAMERA_NAME = 'camera_3'
 
 # try:
 #     FACE_API_KEY = load_dict_from_file('FACEAPI_KEY.json')['face_api_key']
@@ -19,9 +19,9 @@ FACE_API_KEY = "170fff2406f348459a790f78b16dcd43"
 
 FACE_BASE_URL = 'https://centralindia.api.cognitive.microsoft.com/face/v1.0'
 
-FACE_PERSON_ID_NAME_DICT = {'da3c26c5-5745-46df-9fa2-8003aed1eff7': 'Tanmay Sawant',
-                            '301a333c-2bcf-45b1-b847-fe9191f2ecaa': 'Anirudh Iyer',
-                            'f0b07f85-3d65-4ff4-a1f9-41d1d11edb35': 'Rohan Sawant',
+FACE_PERSON_ID_NAME_DICT = {'1d7d18cb-8e0b-498d-80c6-0d95c3d391e0': 'Tanmay Sawant',
+                            '08ef7629-f8d8-406e-b366-88df696517d8': 'Anirudh Iyer',
+                            '1bf15e0f-3837-493a-8f72-aa3e5e98694f': 'Rohan Sawant',
                             }
 FACE_GROUP_ID = 'students'
 

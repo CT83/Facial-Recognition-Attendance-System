@@ -23,7 +23,7 @@ class TimeFaceIdView(APIView):
         image_link = request.data['image-link']
         camera_name = request.data['camera-name']
 
-        students = [Student.objects.filter(face_id=face_id).first() for face_id in face_ids]
+        students = [Student.objects.filter(face_id=face_id).first() for face_id in face_ids] or []
         print("Present Students:")
         [print(student) for student in students]
 

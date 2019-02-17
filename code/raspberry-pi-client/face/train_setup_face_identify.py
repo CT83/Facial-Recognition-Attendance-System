@@ -7,8 +7,8 @@ from face.FaceAPIWrapper import FaceAPIWrapper
 key = FACE_API_KEY
 base_url = FACE_BASE_URL
 
-person_folder = "Rohan_Sawant"
-person_name = "Rohan Sawant"
+person_folder = "Tanmay_Sawant"
+person_name = "Tanmay Sawant"
 image_urls = [os.path.join("images/" + person_folder + "/train/", f)
               for f in os.listdir("images/" + person_folder + "/train/")]
 print("Images:", image_urls)
