@@ -9,8 +9,6 @@ GPIO_SWITCH = 24
 
 IMAGE_PATH = 'captured_images/'
 CAMERA_NAME = 'camera_2'
-AWS_ACCESS_KEY = 'AKIAJJXPMJJP6CMFFKLQ'
-AWS_ACCESS_SECRET_KEY = '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'
 
 # try:
 #     FACE_API_KEY = load_dict_from_file('FACEAPI_KEY.json')['face_api_key']
@@ -31,4 +29,4 @@ CURRENT_IMAGE_FILE = "temp.png"
 DEFAULT_PERSON_GROUP = 'co6g_students'  # DON'T USE CAPITAL LETTERS
 
 # REST_SERVER_URL = 'http://localhost:8000/'
-REST_SERVER_URL = 'http://192.168.1.2:8000/'
+REST_SERVER_URL = 'http://fras-1.herokuapp.com/'
