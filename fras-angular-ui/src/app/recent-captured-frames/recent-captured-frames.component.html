@@ -1,0 +1,22 @@
+
+<h1>Recent Frames</h1>
+
+<ul>
+  <h3>Images</h3>
+  <ul *ngFor="let item of $recent_captured_frames;">
+    <li class="blue-text">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{ item.captured_at }}</mat-card-title>
+          <mat-card-subtitle>{{item.camera_name}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-lg-image src="{{item.image_link}}">
+        <mat-card-content>
+          <p>
+            Present : {{item.students.length}}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </li>
+  </ul>
+</ul>
