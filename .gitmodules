@@ -1,0 +1,3 @@
+[submodule "code/fras-angular-ui"]
+	path = code/fras-angular-ui
+	url = https://github.com/CT83/fras-angular-ui.git
