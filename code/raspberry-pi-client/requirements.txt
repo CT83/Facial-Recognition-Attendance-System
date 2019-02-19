@@ -1,8 +1,0 @@
-certifi==2018.4.16
-chardet==3.0.4
-cognitive-face==1.4.2
-idna==2.7
-numpy==1.15.0
-opencv-python==3.4.2.17
-requests==2.19.1
-urllib3==1.23
