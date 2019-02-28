@@ -23,7 +23,7 @@ def main():
 
     while 1:
         try:
-            image_filename = 'temp_images/' + CAMERA_NAME + "/" + current_time_to_string() + ".jpg"
+            image_filename = 'captured_images/' + CAMERA_NAME + "/" + current_time_to_string() + ".jpg"
             image = Camera().capture_image()
             cv2.imwrite(image_filename, image)
 

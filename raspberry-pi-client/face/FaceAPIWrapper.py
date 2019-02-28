@@ -60,7 +60,9 @@ class FaceAPIWrapper:
 
     @staticmethod
     def detect_faces(image):
-        detected_results = CF.face.detect(image)
+        detected_results = CF.face.detect(image,
+                                          attributes="age,gender,smile,facialHair,glasses,emotion,makeup,accessories,occlusion,blur,exposure,noise")
+        print("Detected Faces", detected_results)
         face_ids = []
         for result in detected_results:
             face_ids.append(result['faceId'])
