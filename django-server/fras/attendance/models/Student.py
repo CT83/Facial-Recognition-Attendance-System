@@ -34,3 +34,13 @@ class Student(models.Model):
                 present_days.append(working_day)
 
         return present_days
+
+    def get_freq_seen_by(self):
+        from attendance.models.CapturedFrame import CapturedFrame
+        caps = CapturedFrame.objects.filter(students=self)
+        seen_ins = [cap.camera_name for cap in caps]
+        return most_common(seen_ins)
+
+
+def most_common(lst):
+    return max(set(lst), key=lst.count)
