@@ -1,3 +1,5 @@
+import os
+
 from utils import is_raspberry_pi
 
 CAMERA_PORT = 0
@@ -8,14 +10,9 @@ CAPTURE_INTERVAL = 15
 GPIO_SWITCH = 24
 
 IMAGE_PATH = 'captured_images/'
-CAMERA_NAME = 'camera_3'
+CAMERA_NAME = os.environ.get('CAMERA_NAME', "")
 
-# try:
-#     FACE_API_KEY = load_dict_from_file('FACEAPI_KEY.json')['face_api_key']
-# except FileNotFoundError:
-#     FACE_API_KEY = ""
-
-FACE_API_KEY = "170fff2406f348459a790f78b16dcd43"
+FACE_API_KEY = os.environ.get('FACE_API_KEY', "")
 
 FACE_BASE_URL = 'https://centralindia.api.cognitive.microsoft.com/face/v1.0'
 
@@ -28,5 +25,4 @@ FACE_GROUP_ID = 'students'
 CURRENT_IMAGE_FILE = "temp.png"
 DEFAULT_PERSON_GROUP = 'co6g_students'  # DON'T USE CAPITAL LETTERS
 
-# REST_SERVER_URL = 'http://localhost:8000/'
-REST_SERVER_URL = 'http://fras-1.herokuapp.com/'
+REST_SERVER_URL = os.environ.get('REST_SERVER_URL', 'http://fras-1.herokuapp.com/')

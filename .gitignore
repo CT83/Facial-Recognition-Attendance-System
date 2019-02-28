@@ -186,3 +186,5 @@ typings/
 .fusebox/
 
 .idea
+raspberry-pi-client/captured_images
+raspberry-pi-client/temp.png

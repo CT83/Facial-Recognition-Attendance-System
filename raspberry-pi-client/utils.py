@@ -1,5 +1,8 @@
 import datetime
 import io
+import os
+
+import boto3
 
 
 def is_raspberry_pi(raise_on_errors=False):
@@ -81,3 +84,31 @@ def get_lecture_number(time=datetime.datetime.now()):
     if time.hour > 17:
         idx = 8
     return idx
+
+
+def upload_to_s3(key):
+    print("Uploading file to S3...")
+    bucket_name = 'fras-store'
+
+    folder_name = "public_folder"
+    output_name = folder_name + "/" + key
+    location = 'us-east-1'
+
+    s3 = boto3.client('s3')
+    s3.upload_file(key, bucket_name, output_name, ExtraArgs={'ACL': 'public-read'})
+
+    url = "https://s3.amazonaws.com/%s/%s/%s" % (bucket_name, folder_name, key)
+    return url
+
+
+def current_time_to_string():
+    from datetime import datetime
+    return datetime.now().strftime("%Y%m%d_%H%M%S%f")
+
+
+def create_dir_if_not_exists(output_dir):
+    try:
+        os.makedirs(output_dir)
+    except OSError:
+        if not os.path.isdir(output_dir):
+            raise
