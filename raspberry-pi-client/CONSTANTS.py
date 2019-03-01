@@ -12,7 +12,7 @@ GPIO_SWITCH = 24
 IMAGE_PATH = 'captured_images/'
 CAMERA_NAME = os.environ.get('CAMERA_NAME', "")
 
-FACE_API_KEY = os.environ.get('FACE_API_KEY', "170fff2406f348459a790f78b16dcd43")
+FACE_API_KEY = os.environ.get('FACE_API_KEY', "")
 
 FACE_BASE_URL = 'https://centralindia.api.cognitive.microsoft.com/face/v1.0'
 
