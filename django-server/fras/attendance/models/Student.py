@@ -39,7 +39,10 @@ class Student(models.Model):
         from attendance.models.CapturedFrame import CapturedFrame
         caps = CapturedFrame.objects.filter(students=self)
         seen_ins = [cap.camera_name for cap in caps]
-        return most_common(seen_ins)
+        if seen_ins:
+            return most_common(seen_ins)
+        else:
+            return "-"
 
 
 def most_common(lst):
