@@ -10,7 +10,7 @@ CAPTURE_INTERVAL = 15
 GPIO_SWITCH = 24
 
 IMAGE_PATH = 'captured_images/'
-CAMERA_NAME = os.environ.get('CAMERA_NAME', "")
+CAMERA_NAME = os.environ.get('CAMERA_NAME', "Camera 1")
 
 FACE_API_KEY = os.environ.get('FACE_API_KEY', "")
 
