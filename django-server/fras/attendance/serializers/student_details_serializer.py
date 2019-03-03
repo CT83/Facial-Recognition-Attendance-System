@@ -1,6 +1,5 @@
 from rest_framework import serializers
 
-from attendance.models.CapturedFrame import CapturedFrame
 from attendance.models.Student import Student
 
 
@@ -8,7 +7,7 @@ class StudentDetailsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Student
         fields = ('full_name', 'face_id', 'id', 'total_present_days', 'total_absent_days',
-                  'present_percentage', 'freq_seen_by')
+                  'present_percentage', 'freq_seen_by', 'last_seen')
 
     full_name = serializers.CharField()
     face_id = serializers.CharField()
@@ -16,6 +15,7 @@ class StudentDetailsSerializer(serializers.ModelSerializer):
     total_absent_days = serializers.SerializerMethodField()
     present_percentage = serializers.SerializerMethodField()
     freq_seen_by = serializers.SerializerMethodField()
+    last_seen = serializers.SerializerMethodField()
 
     @staticmethod
     def get_total_present_days(obj):
@@ -38,3 +38,8 @@ class StudentDetailsSerializer(serializers.ModelSerializer):
     @staticmethod
     def get_freq_seen_by(obj):
         return obj.get_freq_seen_by()
+
+    @staticmethod
+    def get_last_seen(obj):
+        from attendance.serializers.CapturedFrameSerializer import CapturedFrameSerializer
+        return CapturedFrameSerializer(obj.get_last_seen()).data

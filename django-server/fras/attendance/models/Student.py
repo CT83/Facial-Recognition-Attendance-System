@@ -44,6 +44,11 @@ class Student(models.Model):
         else:
             return "-"
 
+    def get_last_seen(self):
+        from attendance.models.CapturedFrame import CapturedFrame
+        cap = CapturedFrame.objects.filter(students=self).last()
+        return cap
+
 
 def most_common(lst):
     return max(set(lst), key=lst.count)
