@@ -14,13 +14,13 @@ def create_database():
     create_lecture_attendances = True
 
     if create_students:
-        student = Student(id=1, full_name='Rohan Sawant', face_id='1bf15e0f-3837-493a-8f72-aa3e5e98694f')
+        student = Student(id=1, full_name='Rohan Sawant', face_id='9ee44c8c-920d-41cd-a1e0-95e9c53e649e')
         student.save()
 
-        student = Student(id=2, full_name='Tanmay Sawant', face_id='1d7d18cb-8e0b-498d-80c6-0d95c3d391e0')
+        student = Student(id=2, full_name='Tanmay Sawant', face_id='85e9211d-6e2a-4a0e-9dba-917311393e2e')
         student.save()
 
-        student = Student(id=3, full_name='Anirudh Iyer', face_id='08ef7629-f8d8-406e-b366-88df696517d8')
+        student = Student(id=3, full_name='Anirudh Iyer', face_id='2274d070-127c-4472-bc48-9df549417c19')
         student.save()
 
     if create_working_days:
