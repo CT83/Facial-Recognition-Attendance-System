@@ -25,21 +25,21 @@ I built so it all ended just fine. :)
 
 ### Basic Architecture
 
-![arch-1](images\arch-1.png)
+![arch-1](images/arch-1.png)
 
 Every Camera Client is responsible for recognizing all of the faces on it’s own and communicating with the **Microsoft Face API** as well as saving the images to S3, also the users connected to the Angular Client can also need to see the uploaded images, so everything ends up looking like this.
 
-![arch-1](images\arch-2.png)
+![arch-1](images/arch-2.png)
 
 ### User Interface
 
 The Main Page shows the list of all registered students, **Face API** is sent about about ~20 images of each student during the initial setup. 
 
-![img](images\acOWKiIrYYWj7kYNbbTsiMtoAVkX5cXyJc4OYOliBeEfTUVj-34iflCaEgPR4LaqUheeuBP_4-07vQy2oOAod03wnZpVq7n-WbaTcGS1oHZb8iEZFgtFquOI_7BRP_XjWmsUoeUbsls)
+![img](images/ui-1.jpg)
 
 Selecting one of the students allows you to see where they were last seen, how many days they were present, and more
 
-![img](images\RSIqhvcq2klaNNKZL55IkHQlD3C_SBoXYal4QizpCMTNkUkQfMom82n6pL6d7hcnTJ8QwONkIMacLEsKM6xRqOTb-VyIQp-b2pBZJmY5Ker3e-P6613himhWf5knlaCjx6yQfTd4014)
+![img](images/ui-2.jpg)
 
 ## Hardware
 
@@ -49,7 +49,7 @@ Selecting one of the students allows you to see where they were last seen, how m
 
 #### Add a 5$ Case and Viola!
 
-![Image](images/camera-case.JPG)
+![Image](images/camera-case.jpg)
 
 ## How do I run it? -- Ehh
 
