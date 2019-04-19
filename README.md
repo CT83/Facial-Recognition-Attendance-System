@@ -49,7 +49,7 @@ Selecting one of the persons allows you to see where they were last seen, how ma
 
 Shows the most recently captured images from all Camera Clients
 
-![img](images\ui-7.png)
+![img](images/ui-7.png)
 
 #### Attendance Table  
 
