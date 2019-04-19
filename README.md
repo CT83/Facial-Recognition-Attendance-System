@@ -25,21 +25,49 @@ I built so it all ended just fine. :)
 
 ### Basic Architecture
 
-![arch-1](images/arch-1.png)
+![arch-1](images/fras-architecture.svg)
 
 Every Camera Client is responsible for recognizing all of the faces on it’s own and communicating with the **Microsoft Face API** as well as saving the images to S3, also the users connected to the Angular Client can also need to see the uploaded images, so everything ends up looking like this.
 
-![arch-1](images/arch-2.png)
+![arch-1](images/fras-architecture-2.svg)
 
 ### User Interface
 
-The Main Page shows the list of all registered students, **Face API** is sent about about ~20 images of each student during the initial setup. 
+#### Main Page
+
+The Main Page shows the list of all registered people, **Face API** is sent about about ~20 images of each person during the initial setup. 
 
 ![img](images/ui-1.jpg)
 
-Selecting one of the students allows you to see where they were last seen, how many days they were present, and more
+#### Person Details
+
+Selecting one of the persons allows you to see where they were last seen, how many days they were present, and more
 
 ![img](images/ui-2.jpg)
+
+#### Recent Images
+
+Shows the most recently captured images from all Camera Clients
+
+![img](images\ui-7.png)
+
+#### Attendance Table  
+
+Shows a list of all dates and number of present people, selecting one of them takes you to the next page.
+
+![img](images/ui-4.png)
+
+#### Working Day Details
+
+Shows all of the lectures which were help that way in school, and how many people were present for those.
+
+![img](images/ui-5.png)
+
+#### Lecture Details
+
+Shows how many students were present for that particular lecture.
+
+![img](images/ui-6.png)
 
 ## Hardware
 
@@ -62,15 +90,29 @@ This is a high level description of what you could do, but feel free to hit me u
 
 ## Problem that I started out to solve
 
-
-
 ![Image](images/no-success.gif)
+
+On one rainy day in July, I dejectedly shook my head at the distressed professor who stared back at me, wondering where half of the class was? I shrugged helplessly, and went back to day dreaming about the Black Mirror episode which I watched earlier that day. The school had tried everything, taking attendance twice during lectures, making everyone sign a piece of paper passed around the class, fining for those who remained absent … you name it. All of these seemed like foolproof solutions to the problems according to the school’s middle management, me? I had my doubts. 
+
+Lack of attendance in school during lectures…hmm, maybe AI could help me solve this, and helped me-solve-this it did, well at least on paper for the time being. 
+
+YES! We could turn the college campus into a total surveillance state, monitor everyone, store everyone’s faces, track their every move, and use that to generate **helpful insights** to make the world a better place. 🙃
+
+That was how everything started, there are still a lot of features which I left unexplored, *Face API* also provides support for emotion recognition…
+
+Why? So we know our happy students from the sad ones? 
+
+Maybe I could add activity recognition? That would help teachers pick the sleepiest of their pupils.
+
+:down-the-rabbit-hole: 🐇
+
+#### Moving on…
 
 
 
 ## Vision
 
-In my worst nightmares, I imagine a highly sophisticated version of this running running on embedded devices like the [Nvidia Nano](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/) - on every street corner, every shop and every stop light, the data could be continuosly stored in on the blockchain with no central point of failure, as we try and hope hard that our [Funky-Glasses](https://www.theverge.com/2016/11/3/13507542/facial-recognition-glasses-trick-impersonate-fool) are enough to fool the cutting edge ML Models.   
+In my worst nightmares, I imagine a highly sophisticated version of this running running on embedded devices like the [Nvidia Nano](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/) - on every street corner, every shop and every stop light, the data could be continuously stored in on the blockchain with no central point of failure, as we try and hope hard that our [Funky-Glasses](https://www.theverge.com/2016/11/3/13507542/facial-recognition-glasses-trick-impersonate-fool) are enough to fool the cutting edge ML Models.   
 
 
 
