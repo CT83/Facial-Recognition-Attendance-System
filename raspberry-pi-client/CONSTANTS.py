@@ -16,9 +16,9 @@ FACE_API_KEY = os.environ.get('FACE_API_KEY', "")
 
 FACE_BASE_URL = 'https://centralindia.api.cognitive.microsoft.com/face/v1.0'
 
-FACE_PERSON_ID_NAME_DICT = {'1d7d18cb-8e0b-498d-80c6-0d95c3d391e0': 'Tanmay Sawant',
-                            '08ef7629-f8d8-406e-b366-88df696517d8': 'Anirudh Iyer',
-                            '1bf15e0f-3837-493a-8f72-aa3e5e98694f': 'Rohan Sawant',
+FACE_PERSON_ID_NAME_DICT = {'FACE_ID1': 'Tanmay Sawant',
+                            'FACE_ID2': 'Anirudh Iyer',
+                            'FACE_ID3': 'Rohan Sawant',
                             }
 FACE_GROUP_ID = 'students'
 
