@@ -31,7 +31,7 @@ I built so it all ended just fine. :)
 
 ### Raspberry Pi Zero - Camera Module
 
-![Image](images/camera-client.jpg)
+![Image](images/camera-client.JPG)
 
 
 
