@@ -29,11 +29,11 @@ I built so it all ended just fine. :)
 
 ### Basic Architecture
 
-![arch-1](images/fras-architecture.svg)
+![arch-1](images/fras-architecture-2.svg)
 
 Every Camera Client is responsible for recognizing all of the faces on it’s own and communicating with the **Microsoft Face API** as well as saving the images to S3, also the users connected to the Angular Client can also need to see the uploaded images, so everything ends up looking like this.
 
-![arch-1](images/fras-architecture-2.svg)
+![arch-1](images/fras-architecture.svg)
 
 ### User Interface
 
