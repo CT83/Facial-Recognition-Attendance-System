@@ -2,7 +2,6 @@
 [![star this repo](http://githubbadges.com/star.svg?user=CT83&repo=Facial-Recognition-Attendance-System&style=flat)](https://github.com/CT83/Facial-Recognition-Attendance-System)
 [![fork this repo](http://githubbadges.com/fork.svg?user=CT83&repo=Facial-Recognition-Attendance-System&style=flat)](https://github.com/CT83/Facial-Recognition-Attendance-System/fork)
 ![GitHub issues](https://img.shields.io/github/issues-raw/CT83/Facial-Recognition-Attendance-System.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/CT83/Facial-Recognition-Attendance-System.svg)
 ### F.R.A.S!
 
 Other than being a mouthful to say; 
