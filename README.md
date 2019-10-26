@@ -38,7 +38,7 @@ Every Camera Client is responsible for recognizing all of the faces on it’s ow
 
 #### Main Page
 
-The Main Page shows the list of all registered people, **Face API** is sent about about ~20 images of each person during the initial setup. 
+The Main Page shows the list of all registered people, **Face API** is sent about ~20 images of each person during the initial setup. 
 
 ![img](images/ui-1.jpg)
 
@@ -62,7 +62,7 @@ Shows a list of all dates and number of present people, selecting one of them ta
 
 #### Working Day Details
 
-Shows all of the lectures which were help that way in school, and how many people were present for those.
+Shows all of the lectures which were held that day in school, and how many people were present for those.
 
 ![img](images/ui-5.png)
 
@@ -84,7 +84,7 @@ Shows how many students were present for that particular lecture.
 
 ## How do I run it? -- Ehh
 
-This is a high level description of what you could do, but feel free to hit me up on Hangouts at rohansawantct83@gmail.com if you are interesting in getting something like this up and running.
+This is a high level description of what you could do, but feel free to hit me up on Hangouts at rohansawantct83@gmail.com if you are interested in getting something like this up and running.
 1. [Setup Microsoft Face API](https://docs.microsoft.com/en-us/azure/cognitive-services/Face/Tutorials/FaceAPIinPythonTutorial) 
 2. [Build OpenCV on a Raspberry Pi Zero](https://www.pyimagesearch.com/2015/12/14/installing-opencv-on-your-raspberry-pi-zero)
 3. [Setup up Django Server on Heroku](https://devcenter.heroku.com/articles/deploying-python)
@@ -95,7 +95,7 @@ This is a high level description of what you could do, but feel free to hit me u
 
 ![Image](images/no-success.gif)
 
-On one rainy day in July, I dejectedly shook my head at the distressed professor who stared back at me, wondering where half of the class was? I shrugged helplessly, and went back to day dreaming about the Black Mirror episode which I watched earlier that day. The school had tried everything, taking attendance twice during lectures, making everyone sign a piece of paper passed around the class, fining for those who remained absent … you name it. All of these seemed like foolproof solutions to the problems according to the school’s middle management, me? I had my doubts. 
+On one rainy day in July, I dejectedly shook my head at the distressed professor who stared back at me, wondering where half of the class was? I shrugged helplessly, and went back to daydreaming about the Black Mirror episode which I watched earlier that day. The school had tried everything, taking attendance twice during lectures, making everyone sign a piece of paper passed around the class, fining for those who remained absent … you name it. All of these seemed like foolproof solutions to the problems according to the school’s middle management, me? I had my doubts. 
 
 Lack of attendance in school during lectures…hmm, maybe AI could help me solve this, and helped me-solve-this it did, well at least on paper for the time being. 
 
