@@ -32,7 +32,7 @@ def setup_persons(names_of_person, delete_existing=False):
 
 
 def main():
-    person_id_name = setup_persons(["Tanmay Sawant", "Rohan Sawant", "Anirudh Iyer"])
+    person_id_name = setup_persons(["Tanmay Sawant", "Rohan Sawant", "Anirudh Iyer"], delete_existing=True)
 
     for id, name in person_id_name.items():
         print(name, "'s ID is", id)
