@@ -4,6 +4,9 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/CT83/Facial-Recognition-Attendance-System.svg)
 ### F.R.A.S!
 
+> #### No Longer Maintained - About to be rewritten. 
+> Guys, I am extremely sorry to say that the Django Server code is severely broken and needs a complete rewrite, I'll be doing that really soon, so until then. Stay Tuned. 🤷🏽‍♂️
+
 Other than being a mouthful to say; 
 _FRAS_ allows **tens of facial-recognition-camera-clients** aka tiny *Raspberry Pi-es* to be deployed all across a college, 
 or an industrial campus, which then record who they see and when they see then to a central database.
