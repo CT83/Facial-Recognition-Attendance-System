@@ -43,12 +43,6 @@ The Main Page shows the list of all registered people, **Face API** is sent abou
 
 ![img](images/ui-1.jpg)
 
-#### Person Details
-
-Selecting one of the persons allows you to see where they were last seen, how many days they were present, and more
-
-![img](images/ui-2m.jpg)
-
 #### Recent Images
 
 Shows the most recently captured images from all Camera Clients
